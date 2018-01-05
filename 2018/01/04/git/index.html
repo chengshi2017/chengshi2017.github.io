@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="Sunny">
 <meta property="og:description" content="git 简介git 是一款分布式的版本控制系统，其核心是分支，分支的意义在于可以将项目代码按照功能和模块拆分为不同的分支。在 git 中，工作目录下面的所有文件都不外乎两种状态： 已跟踪和未跟踪。已跟踪文件是指已经被纳入git中，在版本控制器中有它们的记录，但是当我们对文件进行修改之后，文件变得和git中的不一样，那么它就属于未跟踪文件。初次克隆某个仓库时，所有文件都属于已跟踪文件。 git 常用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-04T12:06:09.813Z">
+<meta property="og:updated_time" content="2018-01-05T09:49:52.415Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git总结">
 <meta name="twitter:description" content="git 简介git 是一款分布式的版本控制系统，其核心是分支，分支的意义在于可以将项目代码按照功能和模块拆分为不同的分支。在 git 中，工作目录下面的所有文件都不外乎两种状态： 已跟踪和未跟踪。已跟踪文件是指已经被纳入git中，在版本控制器中有它们的记录，但是当我们对文件进行修改之后，文件变得和git中的不一样，那么它就属于未跟踪文件。初次克隆某个仓库时，所有文件都属于已跟踪文件。 git 常用">
@@ -401,6 +401,18 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/01/04/git/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/01/04/git/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
 
           
           
@@ -490,10 +502,16 @@
     
     
     <div>
+  <div>
+      
+        
+      
+</div>
+  
   
     <div>
     
-        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+        <div style="text-align:center;color: #cc3299;font-size:24px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
     
 </div>
   
@@ -517,11 +535,6 @@
       </div>
     
 
-    
-      <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="http://i4.bvimg.com/626155/ce83ca1951621f6f.jpg" alt="Sunny 支付宝"/>
-        <p>支付宝</p>
-      </div>
     
 
     
@@ -578,6 +591,32 @@
 
     <div class="post-spread">
       
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
     </div>
   </div>
 
@@ -587,6 +626,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+        <div id="gitment-container" style="display:none"></div>
+      
+    </div>
+	
+  
+  
+
+
+
 
         </div>
         
@@ -657,10 +710,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -956,6 +1009,47 @@
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'chengshi2017',
+            repo: 'https://github.com/chengshi2017/issues.git',
+            
+            lang: "zh-Hans" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'f16d8320c6a04e0f903607fc1a3657489482e26d',
+            
+                client_id: '052a695156d45b229817'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
+      
+      </script>
+    
 
 
 
@@ -1337,7 +1431,7 @@ const loadScript = function loadScript(c,b){var a=document.createElement("script
     return;
   }else
     if (typeof(device) === 'undefined') console.error('Cannot find current-device script.');
-  loadScript("/live2d/script.js", function(){loadlive2d("live2dcanvas", "/live2d/assets/Gantzert_Felixander.model.json", 0.5);});
+  loadScript("/live2d/script.js", function(){loadlive2d("live2dcanvas", "/live2d/assets/Epsilon2.1.model.json", 0.5);});
 })();
 </script>
 
