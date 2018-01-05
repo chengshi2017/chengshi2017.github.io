@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Git总结]]></title>
+    <url>%2F2018%2F01%2F04%2Fgit%2F</url>
+    <content type="text"><![CDATA[git 简介git 是一款分布式的版本控制系统，其核心是分支，分支的意义在于可以将项目代码按照功能和模块拆分为不同的分支。在 git 中，工作目录下面的所有文件都不外乎两种状态： 已跟踪和未跟踪。已跟踪文件是指已经被纳入git中，在版本控制器中有它们的记录，但是当我们对文件进行修改之后，文件变得和git中的不一样，那么它就属于未跟踪文件。初次克隆某个仓库时，所有文件都属于已跟踪文件。 git 常用指令git pull作用 将远程代码仓库里的代码下载下来并自动整合到当前工作分支 用法： git pull origin master 将origin这个版本库中的代码更新到本地的master主支，类似于SVN的update git add作用 是将当前更改或者新增的文件加入到Git的索引中，加入到Git的索引中就表示记入了版本历史中，这也是提交之前所需要执行的一步 用法： git add app/model/user.java 增加app/model/user.java文件到Git的索引中,该功能类似于SVN的add git rm作用 从当前的工作空间中和索引中删除文件 用法： git rm app/model/user.java 删除工作空间中或者索引中的app/model/user.java文件，该功能类似于SVN的rm、del git commit作用 将所有添加到索引库的文件添加到本地仓库文件一旦commit之后，就会在git中形成一个历史版本，以后无论怎么变都能够找到此次提交的记录。 用法： git commit -m story #3, add user model 提交的时候必须用-m来输入一条提交信息，该功能类似于SVN中的commit git push作用 将本地仓库中的修改推送到远程仓库 用法：git push origin 将本地的代码推送到名为origin的远程版本库中 git log作用 查看git的历史日志 该功能类似于SVN的log git revert作用 还原一个版本的修改，必须提供一个具体的Git版本号，Git的版本号都是生成的一个哈希值 用法：git revert bbaf6fb5060b4875b18ff9ff637ce118256d6f20]]></content>
+      <categories>
+        <category>环境</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F01%2F02%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
