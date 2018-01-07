@@ -272,18 +272,16 @@
           </a>
         </li>
       
-	  
+
 	  <!-- 自定义High一下的功能 -->
-      <li class="menu-item"> <a title="听听音乐放松一下吧" href='javascript:( 
-    function go() {
-
-
-    var songs = [
+      <li class="menu-item"> <a title="听听音乐放松一下吧" href='javascript:(/*文凭不过是一张火车票，清华的是软卧，本科的是硬卧，专科的是硬座，民办的是站票，成教的在厕所挤着。火车到站，都下车找工作，才发现老板并不太关心你是怎么来的，只关心你会干什么。——文凭的作用*/
+        function go() {
+        var songs = [
                 "http://p25wdbssm.bkt.clouddn.com/%E8%96%9B%E4%B9%8B%E8%B0%A6%20-%20%E6%BC%94%E5%91%98%20%5Bmqms2%5D.flac",
                 "http://p25wdbssm.bkt.clouddn.com/Noicybino%20-%20Tell%20me.mp3"
     ];
 
-    
+
     function c() {
         var e = document.createElement("link");
         e.setAttribute("type", "text/css");
@@ -292,14 +290,14 @@
         e.setAttribute("class", l);
         document.body.appendChild(e)
     }
- 
+
     function h() {
         var e = document.getElementsByClassName(l);
         for (var t = 0; t < e.length; t++) {
             document.body.removeChild(e[t])
         }
     }
- 
+
     function p() {
         var e = document.createElement("div");
         e.setAttribute("class", a);
@@ -308,19 +306,19 @@
             document.body.removeChild(e)
         }, 100)
     }
- 
+
     function d(e) {
         return {
             height : e.offsetHeight,
             width : e.offsetWidth
         }
     }
- 
+
     function v(i) {
         var s = d(i);
         return s.height > e && s.height < n && s.width > t && s.width < r
     }
- 
+
     function m(e) {
         var t = e;
         var n = 0;
@@ -330,7 +328,7 @@
         }
         return n
     }
- 
+
     function g() {
         var e = document.documentElement;
         if (!!window.innerWidth) {
@@ -340,14 +338,14 @@
         }
         return 0
     }
- 
+
     function y() {
         if (window.pageYOffset) {
             return window.pageYOffset
         }
         return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
     }
- 
+
     function E(e) {
         var t = m(e);
         return t >= w && t <= b + w
@@ -369,15 +367,15 @@
         e.src = i;
         e.play()
     }
- 
+
     function x(e) {
         e.className += " " + s + " " + o
     }
- 
+
     function T(e) {
         e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
     }
- 
+
     function N() {
         var e = document.getElementsByClassName(s);
         var t = new RegExp("\\b" + s + "\\b");
@@ -416,7 +414,7 @@
         document.body.appendChild(e);
         }
     }
-    
+
     initAudioEle();
     var e = 30;
     var t = 30;
@@ -425,7 +423,7 @@
 
     var curSongIndex = parseInt(document.getElementById("audio_element_id").getAttribute("curSongIndex"));
     var i = songs[curSongIndex];
-    
+
     var s = "mw-harlem_shake_me";
     var o = "im_first";
     var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
@@ -433,7 +431,7 @@
 
     /* harlem-shake-style.css，替换成你的位置，也可以直接使用：//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css */
     var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
-    
+
     var l = "mw_added_css";
     var b = g();
     var w = y();
@@ -957,7 +955,7 @@
 	  <div id="music163player">
 		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" title="背景音乐" width=490 height=86 src="//music.163.com/outchain/player?type=2&id=34183386&auto=0&height=66"></iframe>
       </div>
-	  
+
     </div>
   </aside>
 
