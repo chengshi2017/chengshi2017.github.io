@@ -188,7 +188,7 @@ body {
   font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;
   line-height: 2;
-  color: #000;
+  color: #008000;
   background: #87cefa;
 }
 @media (max-width: 767px) {
@@ -306,7 +306,7 @@ hr {
 }
 blockquote {
   padding: 0 15px;
-  color: #000;
+  color: #008000;
   border-left: 4px solid #ddd;
 }
 blockquote cite::before {
@@ -940,9 +940,9 @@ pre .javascript .function {
   display: inline-block;
   padding: 0 20px;
   font-size: 14px;
-  color: #000;
+  color: #008000;
   background: #fff;
-  border: 2px solid #000;
+  border: 2px solid #008000;
   text-decoration: none;
   border-radius: 2px;
   transition-property: background-color;
@@ -967,7 +967,7 @@ pre .javascript .function {
   display: block;
   width: 22px;
   height: 2px;
-  background: #000;
+  background: #008000;
   border-radius: 1px;
 }
 .btn-bar+.btn-bar {
@@ -1419,7 +1419,7 @@ pre .javascript .function {
   transition-property: background;
 }
 .posts-collapse .post-header:hover {
-  border-bottom-color: #000;
+  border-bottom-color: #008000;
 }
 .posts-collapse .post-header:hover::before {
   background: #1c1c1c;
@@ -1444,7 +1444,7 @@ pre .javascript .function {
   opacity: 0.6;
 }
 .posts-collapse .post-title a {
-  color: #000;
+  color: #008000;
   border-bottom: none;
 }
 .page-home .post-type-quote .post-header,
@@ -2106,7 +2106,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #71fffb;
+  background: #ff09ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2167,7 +2167,7 @@ img:hover {
 }
 .post-toc-empty {
   font-size: 14px;
-  color: #000;
+  color: #008000;
 }
 .post-toc-wrap {
   overflow: hidden;
@@ -2190,7 +2190,7 @@ img:hover {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   transition-property: all;
-  color: #000;
+  color: #008000;
   border-bottom-color: #dc143c;
 }
 .post-toc ol a:hover {
@@ -2913,7 +2913,7 @@ img:hover {
   overflow: hidden;
   padding: 0;
   width: 240px;
-  background: #fff;
+  background: #d8bfd8;
   box-shadow: initial;
   border-radius: initial;
 }
@@ -2972,7 +2972,7 @@ img:hover {
   box-sizing: border-box;
   padding: 40px;
   width: 700px;
-  background: #fff;
+  background: #c0d9d9;
   min-height: 700px;
   box-shadow: initial;
   border-radius: initial;
@@ -3049,7 +3049,7 @@ img:hover {
 }
 .site-meta {
   padding: 20px 0;
-  color: #fff;
+  color: #008000;
   background: #1c1c1c;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3067,7 +3067,7 @@ img:hover {
   background: none;
 }
 .brand:hover {
-  color: #fff;
+  color: #1e90ff;
 }
 .site-subtitle {
   margin: 10px 10px 0;
@@ -3106,8 +3106,8 @@ img:hover {
 }
 .menu .menu-item a:hover,
 .menu-item-active a {
-  background: #f9f9f9;
-  border-bottom-color: #fff;
+  background: #c5b538;
+  border-bottom-color: #008000;
 }
 .menu .menu-item br {
   display: none;
@@ -3153,8 +3153,8 @@ img:hover {
 .sidebar-inner {
   box-sizing: border-box;
   width: 240px;
-  color: #000;
-  background: #fff;
+  color: #008000;
+  background: #eaeaae;
   box-shadow: initial;
   border-radius: initial;
   opacity: 0;
