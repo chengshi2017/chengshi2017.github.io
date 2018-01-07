@@ -2106,7 +2106,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6eff6e;
+  background: #b0e724;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3106,7 +3106,7 @@ img:hover {
 }
 .menu .menu-item a:hover,
 .menu-item-active a {
-  background: #f0f;
+  background: #ff7f00;
   border-bottom-color: #008000;
 }
 .menu .menu-item br {
