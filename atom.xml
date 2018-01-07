@@ -46,13 +46,20 @@
     <link href="http://yoursite.com/2018/01/02/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F/"/>
     <id>http://yoursite.com/2018/01/02/多线程的几种实现方式/</id>
     <published>2018-01-02T13:22:11.000Z</published>
-    <updated>2018-01-07T09:23:54.952Z</updated>
+    <updated>2018-01-07T10:10:13.811Z</updated>
+    
+    <content type="html"><![CDATA[<p>##什么是线程？</p><blockquote><p>线程是指程序在执行过程中，能够执行程序程序代码的一个执行单元。在Java语言中，线程有四种状态：运行、就绪、挂起和结束。</p></blockquote><a id="more"></a><p>##为什么要使用多线程</p><ul><li>使用多哦线程可以减少程序的相应时间。</li><li>多CPU或多核计算机本身就具有执行多线程的能力。</li><li>与进程相比，线程的创建和切换开销更小。</li><li>使用多线程能简化程序的结构，使程序便于维护和理解。一个非常复杂的进程可以分成多个线程来执行。</li></ul><p>##基本的线程机制<br>在使用线程时，CPU将轮流给每个任务分配其占用时间。每个任务都觉得自己在一直占用着CPU,但事实上CPU时间是划分成片段分配给所有的任务。线程可以使你从这个层次抽身出来。<br>_注意：当系统使用时间切片机制时，CPU轮流给每个任务分配时间，例如Windows（线程优先级和时间片轮转调度）操作系统。但有些操作系统采用FIFO模型，除非有高优先级的线程被唤醒，否则当前线程将一直运行，直至阻塞或终止。</p><p>##如何实现Java多线程</p><p><strong>继承Thread类，重写run()方法</strong><br>Thread 本质上也是实现了Runnable接口的一个实例，它代表一个线程的实例，并且，</p>]]></content>
     
     <summary type="html">
     
+      &lt;p&gt;##什么是线程？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;线程是指程序在执行过程中，能够执行程序程序代码的一个执行单元。在Java语言中，线程有四种状态：运行、就绪、挂起和结束。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
     </summary>
     
-      <category term="基础" scheme="http://yoursite.com/categories/%E5%9F%BA%E7%A1%80/"/>
+      <category term="线程" scheme="http://yoursite.com/categories/%E7%BA%BF%E7%A8%8B/"/>
     
     
       <category term="后端" scheme="http://yoursite.com/tags/%E5%90%8E%E7%AB%AF/"/>
