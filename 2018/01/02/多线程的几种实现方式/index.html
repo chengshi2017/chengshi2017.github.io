@@ -95,18 +95,20 @@
 
 
 
-<meta name="description" content="##什么是线程？  线程是指程序在执行过程中，能够执行程序程序代码的一个执行单元。在Java语言中，线程有四种状态：运行、就绪、挂起和结束。">
+<meta name="description" content="什么是线程？ 线程是指程序在执行过程中，能够执行程序程序代码的一个执行单元。在Java语言中，线程有四种状态：运行、就绪、挂起和结束。">
 <meta name="keywords" content="后端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="多线程的几种实现方式">
 <meta property="og:url" content="http://yoursite.com/2018/01/02/多线程的几种实现方式/index.html">
 <meta property="og:site_name" content="Sunny">
-<meta property="og:description" content="##什么是线程？  线程是指程序在执行过程中，能够执行程序程序代码的一个执行单元。在Java语言中，线程有四种状态：运行、就绪、挂起和结束。">
+<meta property="og:description" content="什么是线程？ 线程是指程序在执行过程中，能够执行程序程序代码的一个执行单元。在Java语言中，线程有四种状态：运行、就绪、挂起和结束。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-07T10:10:13.811Z">
+<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/blog.png">
+<meta property="og:updated_time" content="2018-01-07T12:05:39.565Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="多线程的几种实现方式">
-<meta name="twitter:description" content="##什么是线程？  线程是指程序在执行过程中，能够执行程序程序代码的一个执行单元。在Java语言中，线程有四种状态：运行、就绪、挂起和结束。">
+<meta name="twitter:description" content="什么是线程？ 线程是指程序在执行过程中，能够执行程序程序代码的一个执行单元。在Java语言中，线程有四种状态：运行、就绪、挂起和结束。">
+<meta name="twitter:image" content="http://p25wdbssm.bkt.clouddn.com/blog.png">
 
 
 
@@ -612,7 +614,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  4
                 </span>
               
             </div>
@@ -633,21 +635,26 @@
       
 
       
-        <p>##什么是线程？</p>
-<blockquote>
+        <h3 id="什么是线程？"><a href="#什么是线程？" class="headerlink" title="什么是线程？"></a>什么是线程？</h3><blockquote>
 <p>线程是指程序在执行过程中，能够执行程序程序代码的一个执行单元。在Java语言中，线程有四种状态：运行、就绪、挂起和结束。</p>
 </blockquote>
 <a id="more"></a>
-<p>##为什么要使用多线程</p>
-<ul>
+<h3 id="为什么要使用多线程"><a href="#为什么要使用多线程" class="headerlink" title="为什么要使用多线程"></a>为什么要使用多线程</h3><ul>
 <li>使用多哦线程可以减少程序的相应时间。</li>
 <li>多CPU或多核计算机本身就具有执行多线程的能力。</li>
 <li>与进程相比，线程的创建和切换开销更小。</li>
 <li>使用多线程能简化程序的结构，使程序便于维护和理解。一个非常复杂的进程可以分成多个线程来执行。</li>
 </ul>
-<p>##基本的线程机制<br>在使用线程时，CPU将轮流给每个任务分配其占用时间。每个任务都觉得自己在一直占用着CPU,但事实上CPU时间是划分成片段分配给所有的任务。线程可以使你从这个层次抽身出来。<br>_注意：当系统使用时间切片机制时，CPU轮流给每个任务分配时间，例如Windows（线程优先级和时间片轮转调度）操作系统。但有些操作系统采用FIFO模型，除非有高优先级的线程被唤醒，否则当前线程将一直运行，直至阻塞或终止。</p>
-<p>##如何实现Java多线程</p>
-<p><strong>继承Thread类，重写run()方法</strong><br>Thread 本质上也是实现了Runnable接口的一个实例，它代表一个线程的实例，并且，</p>
+<h3 id="基本的线程机制"><a href="#基本的线程机制" class="headerlink" title="基本的线程机制"></a>基本的线程机制</h3><p>在使用线程时，CPU将轮流给每个任务分配其占用时间。每个任务都觉得自己在一直占用着CPU,但事实上CPU时间是划分成片段分配给所有的任务。线程可以使你从这个层次抽身出来。<br><em>注意：当系统使用时间切片机制时，CPU轮流给每个任务分配时间，例如Windows（线程优先级和时间片轮转调度）操作系统。但有些操作系统采用FIFO模型，除非有高优先级的线程被唤醒，否则当前线程将一直运行，直至阻塞或终止。</em></p>
+<h3 id="如何实现Java多线程"><a href="#如何实现Java多线程" class="headerlink" title="如何实现Java多线程"></a>如何实现Java多线程</h3><h4 id="继承Thread类，重写run-方法"><a href="#继承Thread类，重写run-方法" class="headerlink" title="继承Thread类，重写run()方法"></a>继承Thread类，重写run()方法</h4><p>Thread 本质上也是实现了Runnable接口的一个实例，它代表一个线程的实例，并且，<br>启动线程的唯一方法就是通过Thread类的start()方法。start()方法是一个native(本地)方法，它将启动一个新线程，并执行一个run()方法(Thread中提供的run()方法是一个空方法)。<br>这种方式通过自定义直接继承Thread，并重写run()方法，就可以启动新线程并执行自己定义的run()方法。<br><strong>调用start()方法后并不是立即执行多线程代码，而是使得该线程变成可运行态，什么时候运行多线程是由CPU调度决定的</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class MyThread extends Thread&#123;</span><br><span class="line">     public void run()&#123;</span><br><span class="line">         System.out.println(&quot;Thread body&quot;);</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br><span class="line"> public class Test&#123;</span><br><span class="line">     public static void main(String[] args)&#123;</span><br><span class="line">         MyThread thread=new MyThread();</span><br><span class="line">         thread.run();</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="实现Runnable接口，并实现该接口的run-方法"><a href="#实现Runnable接口，并实现该接口的run-方法" class="headerlink" title="实现Runnable接口，并实现该接口的run()方法"></a>实现Runnable接口，并实现该接口的run()方法</h4><p><strong>主要步骤：</strong><br>1） 自定义类并实现Runnable接口，并实现run()方法。<br>2） 创建Thread对象，用实现Runnable接口的对象作为参数实例化该Thread对象。<br>3） 调用Thread的start()方法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class MyThread implements Runnable&#123;</span><br><span class="line">    public void run()&#123;</span><br><span class="line">        System.out.println(&quot;Thread body&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">public class Test&#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        MyThread thread=new MyThread();</span><br><span class="line">        Thread t=new Thread(thread);</span><br><span class="line">        t.start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 以上两种是实现多线程最常用的方法。<br> 其实不管是通过继承Thread类还是通过使用Runnable接口来实现多线程的方法，最终还是通过Thread的对象的API来控制线程的。</p>
+<h4 id="实现Callable接口，重写call-方法"><a href="#实现Callable接口，重写call-方法" class="headerlink" title="实现Callable接口，重写call()方法"></a>实现Callable接口，重写call()方法</h4><p>Callable接口实际上是属于Executor框架的功能类，Callable接口与Runnable接口的功能类类似，但提供了比Runnable更强大的功能，主要表现在以下三点：<br><strong>1）Callable可以在任务结束后提供一个返回值，Runnable无法提供这个功能。</strong><br><strong>2）Callable中的call()方法可以抛出异常，而Runnable的run()方法无法抛出异常。</strong><br><strong>3）运行Callable可以拿到一个Future对象，Future对象表示异步计算的结果，可以使用Future来监视目标线程调用call()方法的情况，当调用Future的get()方法以获取结果时，当前线程就会阻塞，直到call()方法结束返回结果。</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">public class CallableAndFuture&#123;</span><br><span class="line">    //创建线程类</span><br><span class="line">    public static class CallableTest implements Callable&lt;String&gt;&#123;</span><br><span class="line">        @Override</span><br><span class="line">        public String call() throws Exception &#123;</span><br><span class="line">            return &quot;欢迎来到我的博客！&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        ExecutorService threadPool= Executors.newSingleThreadExecutor();</span><br><span class="line">        //启动线程</span><br><span class="line">        Future&lt;String&gt; future=threadPool.submit(new CallableTest());</span><br><span class="line">        try &#123;</span><br><span class="line">            System.out.println(&quot;waiting thread to finish&quot;);</span><br><span class="line">            //等待线程结束，并获取返回结果</span><br><span class="line">            System.out.println(future.get());</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上述程序的输出结果为：<br><img src="http://p25wdbssm.bkt.clouddn.com/blog.png" alt=""></p>
+<p>以上3中方式中，前两种方式线程执行完后都没有返回值，只有最后一种带有返回值的，但是当需要使用多线程时，一般最好是使用实现Runnable接口的方式。<br>因为Thread类定义的多中方法可以被派生类使用或者重写。但是只有run()方法是必须被重写的，在run()方法中实现了这个线程的主要功能。</p>
 
       
     </div>
@@ -658,6 +665,35 @@
   <div>
       
         
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2018/01/02/多线程的几种实现方式/">多线程的几种实现方式</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Sunny 的个人博客">Sunny</a></p>
+  <p><span>发布时间:</span>2018年01月02日 - 21:01</p>
+  <p><span>最后更新:</span>2018年01月07日 - 20:01</p>
+  <p><span>原始链接:</span><a href="/2018/01/02/多线程的几种实现方式/" title="多线程的几种实现方式">http://yoursite.com/2018/01/02/多线程的几种实现方式/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/01/02/多线程的几种实现方式/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+      $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+        });
+    });  
+</script>
+
       
 </div>
   
@@ -828,8 +864,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -963,6 +1008,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是线程？"><span class="nav-number">1.</span> <span class="nav-text">什么是线程？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么要使用多线程"><span class="nav-number">2.</span> <span class="nav-text">为什么要使用多线程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本的线程机制"><span class="nav-number">3.</span> <span class="nav-text">基本的线程机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何实现Java多线程"><span class="nav-number">4.</span> <span class="nav-text">如何实现Java多线程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#继承Thread类，重写run-方法"><span class="nav-number">4.1.</span> <span class="nav-text">继承Thread类，重写run()方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实现Runnable接口，并实现该接口的run-方法"><span class="nav-number">4.2.</span> <span class="nav-text">实现Runnable接口，并实现该接口的run()方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实现Callable接口，重写call-方法"><span class="nav-number">4.3.</span> <span class="nav-text">实现Callable接口，重写call()方法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -1005,7 +1066,7 @@
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共1.0k字</span>
+  <span class="post-count">博客全站共1.8k字</span>
 </div>
 
         
