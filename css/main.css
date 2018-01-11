@@ -2106,7 +2106,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff58;
+  background: #ff442e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3319,7 +3319,7 @@ pre {
 }
 @media screen and (min-width: 1200px) {
   body {
-    background-image: url("http://i2.bvimg.com/626155/44cd30632793eb6e.jpg");
+    background-image: url("http://p25wdbssm.bkt.clouddn.com/bacckgroud.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 50%;
