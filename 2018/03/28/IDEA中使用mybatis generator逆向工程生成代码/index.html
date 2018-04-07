@@ -95,25 +95,23 @@
 
 
 
-<meta name="description" content="什么是热部署？热部署，就是在应用正在运行的时候升级软件，却不需要重新启动应用。在开发过程中，热部署对我们的开发速度有很大的帮助。例如在我们修改Bug的时候对Jsp或者Java类进行了修改在不重新启动WEB服务器就能让修改生效,配置文件除外。">
+<meta name="description" content="本文介绍下如何在idea中利用Maven工具逆向生成mybatis代码 1. 在maven中配置pom.xml文件 在pom.xml的中加入如下插件：">
 <meta name="keywords" content="后端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="spring boot 配置热部署">
-<meta property="og:url" content="http://yoursite.com/2018/01/11/spring boot配置热部署/index.html">
+<meta property="og:title" content="IDEA中使用mybatis generator逆向工程生成代码">
+<meta property="og:url" content="http://yoursite.com/2018/03/28/IDEA中使用mybatis generator逆向工程生成代码/index.html">
 <meta property="og:site_name" content="Sunny">
-<meta property="og:description" content="什么是热部署？热部署，就是在应用正在运行的时候升级软件，却不需要重新启动应用。在开发过程中，热部署对我们的开发速度有很大的帮助。例如在我们修改Bug的时候对Jsp或者Java类进行了修改在不重新启动WEB服务器就能让修改生效,配置文件除外。">
+<meta property="og:description" content="本文介绍下如何在idea中利用Maven工具逆向生成mybatis代码 1. 在maven中配置pom.xml文件 在pom.xml的中加入如下插件：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/1.png">
-<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/2.png">
-<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/3.png">
-<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/4.png">
-<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/7.png">
-<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/8.png">
-<meta property="og:updated_time" content="2018-01-11T12:49:53.327Z">
+<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/mybatis.png">
+<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/mybatis2.png">
+<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/mabatis3.png">
+<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/mybatis4.png">
+<meta property="og:updated_time" content="2018-01-10T12:40:57.247Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="spring boot 配置热部署">
-<meta name="twitter:description" content="什么是热部署？热部署，就是在应用正在运行的时候升级软件，却不需要重新启动应用。在开发过程中，热部署对我们的开发速度有很大的帮助。例如在我们修改Bug的时候对Jsp或者Java类进行了修改在不重新启动WEB服务器就能让修改生效,配置文件除外。">
-<meta name="twitter:image" content="http://p25wdbssm.bkt.clouddn.com/1.png">
+<meta name="twitter:title" content="IDEA中使用mybatis generator逆向工程生成代码">
+<meta name="twitter:description" content="本文介绍下如何在idea中利用Maven工具逆向生成mybatis代码 1. 在maven中配置pom.xml文件 在pom.xml的中加入如下插件：">
+<meta name="twitter:image" content="http://p25wdbssm.bkt.clouddn.com/mybatis.png">
 
 
 
@@ -143,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/01/11/spring boot配置热部署/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/28/IDEA中使用mybatis generator逆向工程生成代码/"/>
 
 
 
 
 
-  <title>spring boot 配置热部署 | Sunny</title>
+  <title>IDEA中使用mybatis generator逆向工程生成代码 | Sunny</title>
   
 
 
@@ -525,7 +523,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/11/spring boot配置热部署/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/28/IDEA中使用mybatis generator逆向工程生成代码/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sunny">
@@ -542,7 +540,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">spring boot 配置热部署</h1>
+          <h1 class="post-title" itemprop="name headline">IDEA中使用mybatis generator逆向工程生成代码</h1>
         
 
         <div class="post-meta">
@@ -554,8 +552,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-11T19:01:00+08:00">
-                2018-01-11
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-28T14:18:48+08:00">
+                2018-03-28
               </time>
             
 
@@ -577,8 +575,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/spring-boot/" itemprop="url" rel="index">
-                    <span itemprop="name">spring boot</span>
+                  <a href="/categories/mybatis/" itemprop="url" rel="index">
+                    <span itemprop="name">mybatis</span>
                   </a>
                 </span>
 
@@ -595,8 +593,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/01/11/spring boot配置热部署/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/01/11/spring boot配置热部署/" itemprop="commentsCount"></span>
+                <a href="/2018/03/28/IDEA中使用mybatis generator逆向工程生成代码/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/03/28/IDEA中使用mybatis generator逆向工程生成代码/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -621,7 +619,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  7
                 </span>
               
             </div>
@@ -642,29 +640,27 @@
       
 
       
-        <h2 id="什么是热部署？"><a href="#什么是热部署？" class="headerlink" title="什么是热部署？"></a>什么是热部署？</h2><p>热部署，就是在应用正在运行的时候升级软件，却不需要重新启动应用。<br>在开发过程中，热部署对我们的开发速度有很大的帮助。例如在我们修改Bug的时候对Jsp或者Java类进行了修改在不重新启动WEB服务器就能让修改生效,<strong>配置文件除外</strong>。</p>
+        <p>本文介绍下如何在idea中利用Maven工具逆向生成mybatis代码</p>
+<p><strong>1. 在maven中配置pom.xml文件</strong></p>
+<p>在pom.xml的<build></build>中加入如下插件：</p>
 <a id="more"></a>
-<h2 id="怎么样进行热部署"><a href="#怎么样进行热部署" class="headerlink" title="怎么样进行热部署"></a>怎么样进行热部署</h2><h3 id="如何在idea中设置Tomcat热部署"><a href="#如何在idea中设置Tomcat热部署" class="headerlink" title="如何在idea中设置Tomcat热部署"></a>如何在idea中设置Tomcat热部署</h3><h4 id="1-首先打开idea，点击右上角的下拉框，选中Edit-Configurations-如下图："><a href="#1-首先打开idea，点击右上角的下拉框，选中Edit-Configurations-如下图：" class="headerlink" title="1.首先打开idea，点击右上角的下拉框，选中Edit Configurations,如下图："></a>1.首先打开idea，点击右上角的下拉框，选中Edit Configurations,如下图：</h4><p><img src="http://p25wdbssm.bkt.clouddn.com/1.png" alt=""></p>
-<h4 id="2-点击对话框左上角的加号，选择Tomcat-Server，再选择Local子菜单"><a href="#2-点击对话框左上角的加号，选择Tomcat-Server，再选择Local子菜单" class="headerlink" title="2.点击对话框左上角的加号，选择Tomcat Server，再选择Local子菜单"></a>2.点击对话框左上角的加号，选择Tomcat Server，再选择Local子菜单</h4><p><img src="http://p25wdbssm.bkt.clouddn.com/2.png" alt=""></p>
-<h4 id="3-选择Deployment选项卡，对需要部署的项目文件做设置，点击加号选择Artifact，然后选择war-exploded方式，这种方式是以文件夹方式部署的，而war是以war包的方式，exploded方式支持热部署，注意一定要选择exploded方式，否则无法实现热部署。"><a href="#3-选择Deployment选项卡，对需要部署的项目文件做设置，点击加号选择Artifact，然后选择war-exploded方式，这种方式是以文件夹方式部署的，而war是以war包的方式，exploded方式支持热部署，注意一定要选择exploded方式，否则无法实现热部署。" class="headerlink" title="3.选择Deployment选项卡，对需要部署的项目文件做设置，点击加号选择Artifact，然后选择war exploded方式，这种方式是以文件夹方式部署的，而war是以war包的方式，exploded方式支持热部署，注意一定要选择exploded方式，否则无法实现热部署。"></a>3.选择Deployment选项卡，对需要部署的项目文件做设置，点击加号选择Artifact，然后选择war exploded方式，这种方式是以文件夹方式部署的，而war是以war包的方式，exploded方式支持热部署，注意一定要选择exploded方式，否则无法实现热部署。</h4><p><img src="http://p25wdbssm.bkt.clouddn.com/3.png" alt=""></p>
-<h4 id="4-然后回到Server选项卡，设置On-Update-action和On-frame-detectivation选项，都设置为Update-classes-and-resources，表示classes文件和资源文件都更新"><a href="#4-然后回到Server选项卡，设置On-Update-action和On-frame-detectivation选项，都设置为Update-classes-and-resources，表示classes文件和资源文件都更新" class="headerlink" title="4.然后回到Server选项卡，设置On Update action和On frame detectivation选项，都设置为Update classes and resources，表示classes文件和资源文件都更新"></a>4.然后回到Server选项卡，设置On Update action和On frame detectivation选项，都设置为Update classes and resources，表示classes文件和资源文件都更新</h4><p><img src="http://p25wdbssm.bkt.clouddn.com/4.png" alt=""></p>
-<h4 id="5-如果只设置On-Update-action选项，则需要每次自己手动点击更新，设置了On-frame-detectivation，会监测窗口，idea窗口发生切换则自动更新文件"><a href="#5-如果只设置On-Update-action选项，则需要每次自己手动点击更新，设置了On-frame-detectivation，会监测窗口，idea窗口发生切换则自动更新文件" class="headerlink" title="5.如果只设置On Update action选项，则需要每次自己手动点击更新，设置了On frame detectivation，会监测窗口，idea窗口发生切换则自动更新文件"></a>5.如果只设置On Update action选项，则需要每次自己手动点击更新，设置了On frame detectivation，会监测窗口，idea窗口发生切换则自动更新文件</h4><p><strong>在运行模式下，Java文件更新不会立即生效，可以选择debug模式运行。</strong></p>
-<h3 id="spring-boot热部署配置"><a href="#spring-boot热部署配置" class="headerlink" title="spring boot热部署配置"></a>spring boot热部署配置</h3><p>spring boot致力于快速应用开发领域，内置了很多的组件，让我们摆脱了spring MVC下冗余的配置，使我们的开发变得更加的便捷快速。spring boot在自动嵌入了Tomcat，无需部署war文件，便可使项目快速运行起来，因此spring boot的热部署也与Tomcat的热部署不一样。<br>spring boot的热部署是使用devtools模块。devtools模块，是为开发者服务的一个模块。主要的功能就是代码修改后一般在5秒之内就会自动重新加载至服务器，相当于restart成功。</p>
-<p><strong>原理分析</strong></p>
-<p>在发现代码有更改之后，自动重新启动应用，但是其速度比手动停止后再启动还要快些，更快这里指的不是节省出来的手工操作的时间。</p>
-<ul>
-<li>一个Base ClassLoader加载器，用于加载不会改变的第三方依赖的jar；</li>
-<li>另一个Restart ClassLoader加载器，用于加载自己编写的类；</li>
-<li>执行流程：当应用重启后，原先的Restart ClassLoader被丢掉、重新new一个Restart ClassLoader来加载这些修改过的东西，而Base ClassLoader却没有变化。这就是devtools重启速度快的原因。</li>
-</ul>
-<p><strong>如何实现热部署</strong></p>
-<h4 id="1-修改项目的pom-xml文件"><a href="#1-修改项目的pom-xml文件" class="headerlink" title="1.修改项目的pom.xml文件"></a>1.修改项目的pom.xml文件</h4><p>在依赖中加入:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-devtools&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;1.5.7.RELEASE&lt;/version&gt;</span><br><span class="line">    &lt;optional&gt;true&lt;/optional&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure></p>
-<p>在构建中加入:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;plugin&gt;</span><br><span class="line">   &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">   &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">   &lt;configuration&gt;</span><br><span class="line">      &lt;fork&gt;true&lt;/fork&gt;</span><br><span class="line">      &lt;addResources&gt;true&lt;/addResources&gt;</span><br><span class="line">   &lt;/configuration&gt;</span><br><span class="line">&lt;/plugin&gt;</span><br></pre></td></tr></table></figure></p>
-<h4 id="2-修改设置"><a href="#2-修改设置" class="headerlink" title="2.修改设置"></a>2.修改设置</h4><p>在idea中，还需要到设置里将project automatically勾选上；File-&gt;Setting，然后搜索“compiler”  将右侧project automatically勾上。</p>
-<p><img src="http://p25wdbssm.bkt.clouddn.com/7.png" alt=""></p>
-<h4 id="3-修改IDE配置"><a href="#3-修改IDE配置" class="headerlink" title="3.修改IDE配置"></a>3.修改IDE配置</h4><p>使用ctrl+shift+a 快捷键搜索Registry，选择选择搜索出来的第一个，进入后找到“compiler.automake.allow.when.app.running”，勾上开启此功能即可。</p>
-<p><img src="http://p25wdbssm.bkt.clouddn.com/8.png" alt=""></p>
-<h4 id="4-应用热部署"><a href="#4-应用热部署" class="headerlink" title="4.应用热部署"></a>4.应用热部署</h4><p>重新启动项目即可实现热部署，改动任意代码会立即生效，不用再每次重新启动项目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--mybatis 逆向工程--&gt;</span><br><span class="line">&lt;plugin&gt;</span><br><span class="line">    &lt;groupId&gt;org.mybatis.generator&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mybatis-generator-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;1.3.2&lt;/version&gt;</span><br><span class="line">    &lt;configuration&gt;</span><br><span class="line">        &lt;verbose&gt;true&lt;/verbose&gt;</span><br><span class="line">        &lt;overwrite&gt;true&lt;/overwrite&gt;</span><br><span class="line">    &lt;/configuration&gt;</span><br><span class="line">&lt;/plugin&gt;</span><br></pre></td></tr></table></figure>
+<p>配置好maven插件后，进行下一步。</p>
+<p><strong>2. 添加逆向工程的配置文件</strong></p>
+<p>在resources目录下新建一个generatorConfig.xml文件，然后将如下配置文件拷贝到上面建的文件中。<br>maven的项目配置文件存放位置如下：</p>
+<p><img src="http://p25wdbssm.bkt.clouddn.com/mybatis.png" alt=""></p>
+<p>generatorConfig.xml文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;!DOCTYPE generatorConfiguration</span><br><span class="line">        PUBLIC &quot;-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN&quot;</span><br><span class="line">        &quot;http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;generatorConfiguration&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--classPathEntry:数据库的JDBC驱动 --&gt;</span><br><span class="line">    &lt;classPathEntry location=&quot;F:\.m2\repository\mysql\mysql-connector-java\5.1.34\mysql-connector-java-5.1.34.jar&quot; /&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--&amp;lt;!&amp;ndash;导入属性配置&amp;ndash;&amp;gt;--&gt;</span><br><span class="line">    &lt;!--&lt;properties resource=&quot;jdbc.properties&quot;&gt;&lt;/properties&gt;--&gt;</span><br><span class="line"></span><br><span class="line">    &lt;context id=&quot;default&quot; targetRuntime=&quot;MyBatis3&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- optional，旨在创建class时，对注释进行控制 --&gt;</span><br><span class="line">        &lt;commentGenerator&gt;</span><br><span class="line">            &lt;property name=&quot;suppressDate&quot; value=&quot;true&quot;/&gt;</span><br><span class="line">            &lt;property name=&quot;suppressAllComments&quot; value=&quot;true&quot;/&gt;</span><br><span class="line">        &lt;/commentGenerator&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--jdbc的数据库连接 --&gt;</span><br><span class="line">        &lt;jdbcConnection</span><br><span class="line">                driverClass=&quot;com.mysql.jdbc.Driver&quot;</span><br><span class="line">                connectionURL=&quot;jdbc:mysql://localhost:3306/cms&quot;</span><br><span class="line">                userId=&quot;root&quot;</span><br><span class="line">                password=&quot;sky&quot;&gt;</span><br><span class="line">        &lt;/jdbcConnection&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;!-- 非必需，类型处理器，在数据库类型和java类型之间的转换控制--&gt;</span><br><span class="line">        &lt;javaTypeResolver&gt;</span><br><span class="line">            &lt;property name=&quot;forceBigDecimals&quot; value=&quot;false&quot;/&gt;</span><br><span class="line">        &lt;/javaTypeResolver&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;!-- Model模型生成器,用来生成含有主键key的类，记录类 以及查询Example类</span><br><span class="line">            targetPackage     指定生成的model生成所在的包名</span><br><span class="line">            targetProject     指定在该项目下所在的路径</span><br><span class="line">        --&gt;</span><br><span class="line">        &lt;javaModelGenerator targetPackage=&quot;com.spring.cms.model.vo&quot;</span><br><span class="line">                            targetProject=&quot;src/main/java&quot;&gt;</span><br><span class="line"></span><br><span class="line">            &lt;!-- 是否允许子包，即targetPackage.schemaName.tableName --&gt;</span><br><span class="line">            &lt;property name=&quot;enableSubPackages&quot; value=&quot;false&quot;/&gt;</span><br><span class="line">            &lt;!-- 是否对model添加 构造函数 --&gt;</span><br><span class="line">            &lt;property name=&quot;constructorBased&quot; value=&quot;true&quot;/&gt;</span><br><span class="line">            &lt;!-- 是否对类CHAR类型的列的数据进行trim操作 --&gt;</span><br><span class="line">            &lt;property name=&quot;trimStrings&quot; value=&quot;true&quot;/&gt;</span><br><span class="line">            &lt;!-- 建立的Model对象是否 不可改变  即生成的Model对象不会有 setter方法，只有构造方法 --&gt;</span><br><span class="line">            &lt;property name=&quot;immutable&quot; value=&quot;false&quot;/&gt;</span><br><span class="line">        &lt;/javaModelGenerator&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--Mapper映射文件生成所在的目录 为每一个数据库的表生成对应的SqlMap文件 --&gt;</span><br><span class="line">        &lt;sqlMapGenerator targetPackage=&quot;mapper&quot;</span><br><span class="line">                         targetProject=&quot;src/main/resources&quot;&gt;</span><br><span class="line">            &lt;property name=&quot;enableSubPackages&quot; value=&quot;false&quot;/&gt;</span><br><span class="line">        &lt;/sqlMapGenerator&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 客户端代码，生成易于使用的针对Model对象和XML配置文件 的代码</span><br><span class="line">                type=&quot;ANNOTATEDMAPPER&quot;,生成Java Model 和基于注解的Mapper对象</span><br><span class="line">                type=&quot;MIXEDMAPPER&quot;,生成基于注解的Java Model 和相应的Mapper对象</span><br><span class="line">                type=&quot;XMLMAPPER&quot;,生成SQLMap XML文件和独立的Mapper接口</span><br><span class="line">        --&gt;</span><br><span class="line">        &lt;javaClientGenerator targetPackage=&quot;com.spring.cms.dao&quot;</span><br><span class="line">                             targetProject=&quot;src/main/java&quot; type=&quot;XMLMAPPER&quot;&gt;</span><br><span class="line">            &lt;property name=&quot;enableSubPackages&quot; value=&quot;true&quot;/&gt;</span><br><span class="line">        &lt;/javaClientGenerator&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 必须的（1...N） --&gt;</span><br><span class="line">        &lt;!-- pojo 实体生成器 --&gt;</span><br><span class="line">        &lt;!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 --&gt;</span><br><span class="line">        &lt;!-- schema即为数据库名 可不写 --&gt;</span><br><span class="line">        &lt;table tableName=&quot;cc_user&quot; domainObjectName=&quot;User&quot;</span><br><span class="line">               enableCountByExample=&quot;false&quot; enableUpdateByExample=&quot;false&quot;</span><br><span class="line">               enableDeleteByExample=&quot;false&quot; enableSelectByExample=&quot;false&quot;</span><br><span class="line">               selectByExampleQueryId=&quot;false&quot;&gt;</span><br><span class="line">            &lt;!-- 忽略字段 可选的（0 or 1） --&gt;</span><br><span class="line">            &lt;!-- &lt;ignoreColumn column=&quot;is_use&quot; /&gt; --&gt;</span><br><span class="line">            &lt;!--//无论字段是什么类型，生成的类属性都是varchar。 可选的（0 or 1） 测试无效 --&gt;</span><br><span class="line">            &lt;!-- &lt;columnOverride column=&quot;city_code&quot; jdbcType=&quot;VARCHAR&quot; /&gt; --&gt;</span><br><span class="line">        &lt;/table&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 必须的（1...N） --&gt;</span><br><span class="line">        &lt;!-- pojo 实体生成器 --&gt;</span><br><span class="line">        &lt;!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 --&gt;</span><br><span class="line">        &lt;!-- schema即为数据库名 可不写 --&gt;</span><br><span class="line">        &lt;table tableName=&quot;cc_user_role&quot; domainObjectName=&quot;UserRole&quot;</span><br><span class="line">               enableCountByExample=&quot;false&quot; enableUpdateByExample=&quot;false&quot;</span><br><span class="line">               enableDeleteByExample=&quot;false&quot; enableSelectByExample=&quot;false&quot;</span><br><span class="line">               selectByExampleQueryId=&quot;false&quot;&gt;</span><br><span class="line">            &lt;!-- 忽略字段 可选的（0 or 1） --&gt;</span><br><span class="line">            &lt;!-- &lt;ignoreColumn column=&quot;is_use&quot; /&gt; --&gt;</span><br><span class="line">            &lt;!--//无论字段是什么类型，生成的类属性都是varchar。 可选的（0 or 1） 测试无效 --&gt;</span><br><span class="line">            &lt;!-- &lt;columnOverride column=&quot;city_code&quot; jdbcType=&quot;VARCHAR&quot; /&gt; --&gt;</span><br><span class="line">        &lt;/table&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 必须的（1...N） --&gt;</span><br><span class="line">        &lt;!-- pojo 实体生成器 --&gt;</span><br><span class="line">        &lt;!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 --&gt;</span><br><span class="line">        &lt;!-- schema即为数据库名 可不写 --&gt;</span><br><span class="line">        &lt;table tableName=&quot;cc_role&quot; domainObjectName=&quot;Role&quot;</span><br><span class="line">               enableCountByExample=&quot;false&quot; enableUpdateByExample=&quot;false&quot;</span><br><span class="line">               enableDeleteByExample=&quot;false&quot; enableSelectByExample=&quot;false&quot;</span><br><span class="line">               selectByExampleQueryId=&quot;false&quot;&gt;</span><br><span class="line">            &lt;!-- 忽略字段 可选的（0 or 1） --&gt;</span><br><span class="line">            &lt;!-- &lt;ignoreColumn column=&quot;is_use&quot; /&gt; --&gt;</span><br><span class="line">            &lt;!--//无论字段是什么类型，生成的类属性都是varchar。 可选的（0 or 1） 测试无效 --&gt;</span><br><span class="line">            &lt;!-- &lt;columnOverride column=&quot;city_code&quot; jdbcType=&quot;VARCHAR&quot; /&gt; --&gt;</span><br><span class="line">        &lt;/table&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 必须的（1...N） --&gt;</span><br><span class="line">        &lt;!-- pojo 实体生成器 --&gt;</span><br><span class="line">        &lt;!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 --&gt;</span><br><span class="line">        &lt;!-- schema即为数据库名 可不写 --&gt;</span><br><span class="line">        &lt;table tableName=&quot;cc_role_resource&quot; domainObjectName=&quot;RoleResource&quot;</span><br><span class="line">               enableCountByExample=&quot;false&quot; enableUpdateByExample=&quot;false&quot;</span><br><span class="line">               enableDeleteByExample=&quot;false&quot; enableSelectByExample=&quot;false&quot;</span><br><span class="line">               selectByExampleQueryId=&quot;false&quot;&gt;</span><br><span class="line">            &lt;!-- 忽略字段 可选的（0 or 1） --&gt;</span><br><span class="line">            &lt;!-- &lt;ignoreColumn column=&quot;is_use&quot; /&gt; --&gt;</span><br><span class="line">            &lt;!--//无论字段是什么类型，生成的类属性都是varchar。 可选的（0 or 1） 测试无效 --&gt;</span><br><span class="line">            &lt;!-- &lt;columnOverride column=&quot;city_code&quot; jdbcType=&quot;VARCHAR&quot; /&gt; --&gt;</span><br><span class="line">        &lt;/table&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 必须的（1...N） --&gt;</span><br><span class="line">        &lt;!-- pojo 实体生成器 --&gt;</span><br><span class="line">        &lt;!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 --&gt;</span><br><span class="line">        &lt;!-- schema即为数据库名 可不写 --&gt;</span><br><span class="line">        &lt;table tableName=&quot;cc_resource&quot; domainObjectName=&quot;Resource&quot;</span><br><span class="line">               enableCountByExample=&quot;false&quot; enableUpdateByExample=&quot;false&quot;</span><br><span class="line">               enableDeleteByExample=&quot;false&quot; enableSelectByExample=&quot;false&quot;</span><br><span class="line">               selectByExampleQueryId=&quot;false&quot;&gt;</span><br><span class="line">            &lt;!-- 忽略字段 可选的（0 or 1） --&gt;</span><br><span class="line">            &lt;!-- &lt;ignoreColumn column=&quot;is_use&quot; /&gt; --&gt;</span><br><span class="line">            &lt;!--//无论字段是什么类型，生成的类属性都是varchar。 可选的（0 or 1） 测试无效 --&gt;</span><br><span class="line">            &lt;!-- &lt;columnOverride column=&quot;city_code&quot; jdbcType=&quot;VARCHAR&quot; /&gt; --&gt;</span><br><span class="line">        &lt;/table&gt;</span><br><span class="line">    &lt;/context&gt;</span><br><span class="line">&lt;/generatorConfiguration&gt;</span><br></pre></td></tr></table></figure>
+<p>jdbc.properties配置文件的代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">driverClassName=com.mysql.jdbc.Driver</span><br><span class="line">validationQuery=SELECT 1</span><br><span class="line">jdbc_url=jdbc:mysql://localhost:3306/contentmanagersystem_db?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull</span><br><span class="line">jdbc_username=root</span><br><span class="line">jdbc_password=sky</span><br><span class="line">jdbc.mysql-master.initialSize=5</span><br><span class="line">jdbc.mysql-master.maxActive=5</span><br><span class="line">jdbc.mysql-master.maxIdle=5</span><br><span class="line">jdbc.mysql-master.minIdle=1</span><br><span class="line">jdbc.mysql-master.maxWait=6000</span><br></pre></td></tr></table></figure>
+<p><strong>3. 在IDEA中利用插件生成代码</strong></p>
+<p>选择IDEA右上角下拉框中的Edit Configurations,然后进入到配置页面，选择做上角的 + 号，如图：</p>
+<p><img src="http://p25wdbssm.bkt.clouddn.com/mybatis2.png" alt=""></p>
+<p>选择maven，然后在Commond line栏填上如图命令</p>
+<p><img src="http://p25wdbssm.bkt.clouddn.com/mabatis3.png" alt=""></p>
+<p>点击应用。最后点击启动按钮，即可自动生成代码。</p>
+<p><img src="http://p25wdbssm.bkt.clouddn.com/mybatis4.png" alt=""></p>
+<p>生成成功！</p>
 
       
     </div>
@@ -681,12 +677,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/01/11/spring boot配置热部署/">spring boot 配置热部署</a></p>
+  <p><span>本文标题:</span><a href="/2018/03/28/IDEA中使用mybatis generator逆向工程生成代码/">IDEA中使用mybatis generator逆向工程生成代码</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Sunny 的个人博客">Sunny</a></p>
-  <p><span>发布时间:</span>2018年01月11日 - 19:01</p>
-  <p><span>最后更新:</span>2018年01月11日 - 20:01</p>
-  <p><span>原始链接:</span><a href="/2018/01/11/spring boot配置热部署/" title="spring boot 配置热部署">http://yoursite.com/2018/01/11/spring boot配置热部署/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/01/11/spring boot配置热部署/"  aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2018年03月28日 - 14:03</p>
+  <p><span>最后更新:</span>2018年01月10日 - 20:01</p>
+  <p><span>原始链接:</span><a href="/2018/03/28/IDEA中使用mybatis generator逆向工程生成代码/" title="IDEA中使用mybatis generator逆向工程生成代码">http://yoursite.com/2018/03/28/IDEA中使用mybatis generator逆向工程生成代码/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/03/28/IDEA中使用mybatis generator逆向工程生成代码/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -763,8 +759,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/11/spring boot的配置文件application.properties详解/" rel="next" title="spring boot的配置文件application.properties详解">
-                <i class="fa fa-chevron-left"></i> spring boot的配置文件application.properties详解
+              <a href="/2018/01/06/ArrayList和LinkedList的区别/" rel="next" title="ArrryList和LinkedList的区别">
+                <i class="fa fa-chevron-left"></i> ArrryList和LinkedList的区别
               </a>
             
           </div>
@@ -772,6 +768,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/28/spring boot的配置文件application.properties详解/" rel="prev" title="spring boot的配置文件application.properties详解">
+                spring boot的配置文件application.properties详解 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -870,17 +870,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1013,22 +1004,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是热部署？"><span class="nav-number">1.</span> <span class="nav-text">什么是热部署？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎么样进行热部署"><span class="nav-number">2.</span> <span class="nav-text">怎么样进行热部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何在idea中设置Tomcat热部署"><span class="nav-number">2.1.</span> <span class="nav-text">如何在idea中设置Tomcat热部署</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-首先打开idea，点击右上角的下拉框，选中Edit-Configurations-如下图："><span class="nav-number">2.1.1.</span> <span class="nav-text">1.首先打开idea，点击右上角的下拉框，选中Edit Configurations,如下图：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-点击对话框左上角的加号，选择Tomcat-Server，再选择Local子菜单"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.点击对话框左上角的加号，选择Tomcat Server，再选择Local子菜单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-选择Deployment选项卡，对需要部署的项目文件做设置，点击加号选择Artifact，然后选择war-exploded方式，这种方式是以文件夹方式部署的，而war是以war包的方式，exploded方式支持热部署，注意一定要选择exploded方式，否则无法实现热部署。"><span class="nav-number">2.1.3.</span> <span class="nav-text">3.选择Deployment选项卡，对需要部署的项目文件做设置，点击加号选择Artifact，然后选择war exploded方式，这种方式是以文件夹方式部署的，而war是以war包的方式，exploded方式支持热部署，注意一定要选择exploded方式，否则无法实现热部署。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-然后回到Server选项卡，设置On-Update-action和On-frame-detectivation选项，都设置为Update-classes-and-resources，表示classes文件和资源文件都更新"><span class="nav-number">2.1.4.</span> <span class="nav-text">4.然后回到Server选项卡，设置On Update action和On frame detectivation选项，都设置为Update classes and resources，表示classes文件和资源文件都更新</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-如果只设置On-Update-action选项，则需要每次自己手动点击更新，设置了On-frame-detectivation，会监测窗口，idea窗口发生切换则自动更新文件"><span class="nav-number">2.1.5.</span> <span class="nav-text">5.如果只设置On Update action选项，则需要每次自己手动点击更新，设置了On frame detectivation，会监测窗口，idea窗口发生切换则自动更新文件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#spring-boot热部署配置"><span class="nav-number">2.2.</span> <span class="nav-text">spring boot热部署配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-修改项目的pom-xml文件"><span class="nav-number">2.2.1.</span> <span class="nav-text">1.修改项目的pom.xml文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-修改设置"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.修改设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-修改IDE配置"><span class="nav-number">2.2.3.</span> <span class="nav-text">3.修改IDE配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-应用热部署"><span class="nav-number">2.2.4.</span> <span class="nav-text">4.应用热部署</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
