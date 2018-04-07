@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/03/17/logback%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8Clogback%E7%9A%84%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2018-04-07T09:45:26.780Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/03/28/spring%20boot%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6application.properties%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2018-01-11T12:55:48.430Z</lastmod>
