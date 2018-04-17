@@ -82,7 +82,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="工具," />
 
 
 
@@ -95,17 +95,27 @@
 
 
 
-<meta name="description" content="建站日志2017-12-28：安装Hexo，开始部署搭建本地博客.2017-12-29：多次比较，最终选择NexT主题，下载NexT最新版主题，开始页面的美化.2017-12-31：上传页面至github,博客的架构搭建完成.2018-1-1：完成了标签栏展示页面的编写.2018-1-2：添加了一些评论、搜索等实用的小功能.2018-1-3：对NexT主题进行了美化.2018-1-5：在博客上添加">
-<meta property="og:type" content="website">
-<meta property="og:title" content="weblog">
-<meta property="og:url" content="http://yoursite.com/weblog/index.html">
+<meta name="description" content="&amp;emsp;&amp;emsp;由于最近客户要求在devops持续集成平台上增加代码审计功能，经过一番对比，决定选用sonar来实现，通过网上的文档艰难的完成了安装，写篇博客记录下。">
+<meta name="keywords" content="工具">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jenkins集成Sonar进行持续审查">
+<meta property="og:url" content="http://yoursite.com/2018/04/06/Jenkins集成Sonar进行持续审查/index.html">
 <meta property="og:site_name" content="Sunny">
-<meta property="og:description" content="建站日志2017-12-28：安装Hexo，开始部署搭建本地博客.2017-12-29：多次比较，最终选择NexT主题，下载NexT最新版主题，开始页面的美化.2017-12-31：上传页面至github,博客的架构搭建完成.2018-1-1：完成了标签栏展示页面的编写.2018-1-2：添加了一些评论、搜索等实用的小功能.2018-1-3：对NexT主题进行了美化.2018-1-5：在博客上添加">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;由于最近客户要求在devops持续集成平台上增加代码审计功能，经过一番对比，决定选用sonar来实现，通过网上的文档艰难的完成了安装，写篇博客记录下。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-07T08:45:18.486Z">
+<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/111.png">
+<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/222.png">
+<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/sonar_jenkins_01.png">
+<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/sonar_jenkins_02.png">
+<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/sonar_jenkins_03.png">
+<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/sonar_jenkins_04.png">
+<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/sonar_jenkins_07.png">
+<meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/sonar_jenkins_08.png">
+<meta property="og:updated_time" content="2018-04-17T12:01:53.165Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="weblog">
-<meta name="twitter:description" content="建站日志2017-12-28：安装Hexo，开始部署搭建本地博客.2017-12-29：多次比较，最终选择NexT主题，下载NexT最新版主题，开始页面的美化.2017-12-31：上传页面至github,博客的架构搭建完成.2018-1-1：完成了标签栏展示页面的编写.2018-1-2：添加了一些评论、搜索等实用的小功能.2018-1-3：对NexT主题进行了美化.2018-1-5：在博客上添加">
+<meta name="twitter:title" content="Jenkins集成Sonar进行持续审查">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;由于最近客户要求在devops持续集成平台上增加代码审计功能，经过一番对比，决定选用sonar来实现，通过网上的文档艰难的完成了安装，写篇博客记录下。">
+<meta name="twitter:image" content="http://p25wdbssm.bkt.clouddn.com/111.png">
 
 
 
@@ -135,13 +145,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/weblog/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/06/Jenkins集成Sonar进行持续审查/"/>
 
 
 
 
 
-  <title>weblog | Sunny</title>
+  <title>Jenkins集成Sonar进行持续审查 | Sunny</title>
   
 
 
@@ -505,34 +515,288 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/06/Jenkins集成Sonar进行持续审查/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sunny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://p25wdbssm.bkt.clouddn.com/%E5%A4%B4%E5%83%8F.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sunny">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">weblog</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h3 id="建站日志"><a href="#建站日志" class="headerlink" title="建站日志"></a>建站日志</h3><p><strong>2017-12-28：</strong>安装Hexo，开始部署搭建本地博客.<br><strong>2017-12-29：</strong>多次比较，最终选择NexT主题，下载NexT最新版主题，开始页面的美化.<br><strong>2017-12-31：</strong>上传页面至github,博客的架构搭建完成.<br><strong>2018-1-1：</strong>完成了标签栏展示页面的编写.<br><strong>2018-1-2：</strong>添加了一些评论、搜索等实用的小功能.<br><strong>2018-1-3：</strong>对NexT主题进行了美化.<br><strong>2018-1-5：</strong>在博客上添加了分享的功能（个人感觉最麻烦）.<br><strong>2018-1-6：</strong>添加了High一下的功能，在侧边栏添加了背景音乐播放器.<br><strong>2018-1-7：</strong>将部分资源传至七牛云，修改了字体的加载源，修复了博客加载过慢的问题.</p>
-
+          <h1 class="post-title" itemprop="name headline">Jenkins集成Sonar进行持续审查</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-06T09:46:26+08:00">
+                2018-04-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/运维/" itemprop="url" rel="index">
+                    <span itemprop="name">运维</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/06/Jenkins集成Sonar进行持续审查/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/04/06/Jenkins集成Sonar进行持续审查/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  7
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>&emsp;&emsp;由于最近客户要求在devops持续集成平台上增加代码审计功能，经过一番对比，决定选用sonar来实现，通过网上的文档艰难的完成了安装，写篇博客记录下。<br><a id="more"></a></p>
+<h2 id="SonarQube-简介"><a href="#SonarQube-简介" class="headerlink" title="SonarQube 简介"></a>SonarQube 简介</h2><p>&emsp;&emsp;Sonar是一个用于代码质量管理的开源平台，用于管理Java源代码的质量。通过插件机制，Sonar 可以集成不同的测试工具，代码分析工具，以及持续集成工具，比如pmd-cpd、checkstyle、findbugs、Jenkins。通过不同的插件对这些结果进行再加工处理，通过量化的方式度量代码质量的变化，从而可以方便地对不同规模和种类的工程进行代码质量管理。同时 Sonar 还对大量的持续集成工具提供了接口支持，可以很方便地在持续集成中使用 Sonar。 此外，Sonar 的插件还可以对 Java 以外的其他编程语言提供支持，对国际化以及报告文档化也有良好的支持。<br>Sonar可以从以下七个维度检测代码质量，而作为开发人员至少需要处理前5种代码质量问题<br>&emsp;&emsp;1.不遵循代码标准<br>&emsp;&emsp;sonar可以通过PMD,CheckStyle,Findbugs等等代码规则检测工具规范代码编写<br>&emsp;&emsp;2.潜在的缺陷<br>&emsp;&emsp;sonar可以通过PMD,CheckStyle,Findbugs等等代码规则检测工具检测出潜在的缺陷<br>&emsp;&emsp;3.糟糕的复杂度分布<br>&emsp;&emsp;文件、类、方法等，如果复杂度过高将难以改变，这会使得开发人员难以理解它们且如果没有自动化的单元测试，对于程序中的任何组件的改变都将可能导致需要全面的回归测试<br>&emsp;&emsp;4.重复<br>&emsp;&emsp;显然程序中包含大量复制粘贴的代码是质量低下的，sonar可以展示源码中重复严重的地方<br>&emsp;&emsp;5.注释不足或者过多<br>&emsp;&emsp;没有注释将使代码可读性变差，特别是当不可避免地出现人员变动时，程序的可读性将大幅下降而过多的注释又会使得开发人员将精力过多地花费在阅读注释上，亦违背初衷<br>&emsp;&emsp;6.缺乏单元测试<br>&emsp;&emsp;sonar可以很方便地统计并展示单元测试覆盖率<br>&emsp;&emsp;7.糟糕的设计<br>&emsp;&emsp;通过sonar可以找出循环，展示包与包、类与类之间的相互依赖关系，可以检测自定义的架构规则通过sonar可以管理第三方的jar包，可以利用LCOM4检测单个任务规则的应用情况， 检测耦合。</p>
+<h2 id="SonarQube与Sonar-Scanner的安装与配置"><a href="#SonarQube与Sonar-Scanner的安装与配置" class="headerlink" title="SonarQube与Sonar-Scanner的安装与配置"></a>SonarQube与Sonar-Scanner的安装与配置</h2><h3 id="下载sonarQube安装包"><a href="#下载sonarQube安装包" class="headerlink" title="下载sonarQube安装包"></a>下载sonarQube安装包</h3><p>&emsp;&emsp;SonarQube可以在官网(<a href="https://www.sonarqube.org/downloads/" target="_blank" rel="noopener">https://www.sonarqube.org/downloads/</a>)下载，在Linux服务器上安装始终加载不到静态文件，所以最后决定直接在Windows服务器上安装sonar，将从官网下载的安装包解压到任意目录。</p>
+<h3 id="创建sonar数据库"><a href="#创建sonar数据库" class="headerlink" title="创建sonar数据库"></a>创建sonar数据库</h3><p>&emsp;&emsp;SonarQube自带了一个H2数据库，但是为了获得更好的性能还是选择MySQL数据库。首先在mysql中新建一个sonar数据库，用于存放分析的数据，并且新建一个数据库用户，实测直接用root账户会报错。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; CREATE USER <span class="string">'sonar'</span>@<span class="string">'%'</span> IDENTIFIED BY <span class="string">'password'</span>;</span><br><span class="line">&gt; GRANT all privileges ON sonarqube.* TO sonar<span class="string">'@'</span><span class="string">'%'</span> IDENTIFIED BY <span class="string">'password'</span>;</span><br><span class="line">&gt; flush privileges;</span><br><span class="line">&gt; create database sonar;</span><br></pre></td></tr></table></figure></p>
+<p><strong>注意：MySQL数据库一定要在5.6以上(sonar要求数据库支持事务，mysql5.6+才是InnerDB)</strong></p>
+<h3 id="配置sonar应用mysql"><a href="#配置sonar应用mysql" class="headerlink" title="配置sonar应用mysql"></a>配置sonar应用mysql</h3><p>&emsp;&emsp;修改配置文件sonar.properties<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sonar.jdbc.username=sonar</span><br><span class="line">sonar.jdbc.password=sonar</span><br><span class="line">sonar.jdbc.url=jdbc:mysql://172.17.20.140:3307/sonar?useUnicode=true&amp;characterEncoding=utf8&amp;rewriteBatchedStatements=true&amp;useConfigs=maxPerformance&amp;useSSL=false</span><br><span class="line">sonar.web.host=0.0.0.0</span><br><span class="line">sonar.web.context=/sonar</span><br><span class="line">sonar.web.port=9000</span><br></pre></td></tr></table></figure></p>
+<p>保存配置文件后，进入\bin\windows-x86-64目录下，双击startup.bat启动。如果启动过程没有报错，打开浏览器输入<a href="http://172.17.20.125:9000/sonar/" target="_blank" rel="noopener">http://172.17.20.125:9000/sonar/</a>，出现如下画面说明安装成功<img src="http://p25wdbssm.bkt.clouddn.com/111.png" alt=""></p>
+<h2 id="配置Sonar-Scanner-进行项目代码审查"><a href="#配置Sonar-Scanner-进行项目代码审查" class="headerlink" title="配置Sonar-Scanner 进行项目代码审查"></a>配置Sonar-Scanner 进行项目代码审查</h2><p>&emsp;&emsp;下载sonar-scanner，解压到任意目录，同样的修改sonar.properties 配置文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># --------指定系统中sonar访问路径</span><br><span class="line">sonar.host.url=http://localhost:9000/sonar</span><br></pre></td></tr></table></figure></p>
+<p><strong>如果安装的不是同一台机器，将localhost修改为对应地址即可</strong><br>sonar-scanner在项目中使用需要在项目根目录下添加sonar-project.properties文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#sonar-project.properties内容如下</span><br><span class="line">sonar.projectKey=project_key</span><br><span class="line">sonar.projectName=project_name</span><br><span class="line">sonar.projectVersion=1.0</span><br><span class="line">sonar.sources=./</span><br><span class="line">sonar.language=py //需要扫描哪种语言的代码，如python:py，java:java</span><br><span class="line">sonar.sourceEncoding=UTF-8</span><br><span class="line">sonar.host.url=http://your_host:your_port/[your_prefix]</span><br></pre></td></tr></table></figure></p>
+<p>进入项目根目录，启动cmd命令行，输入sonar-scanner，sonar-scanner会自动对项目进行检查，检查的结果发送到sonar服务器进行解析，然后反馈的用户。<br><img src="http://p25wdbssm.bkt.clouddn.com/222.png" alt=""></p>
+<h2 id="将sonar集成到jenkins中"><a href="#将sonar集成到jenkins中" class="headerlink" title="将sonar集成到jenkins中"></a>将sonar集成到jenkins中</h2><p>&emsp;&emsp;将sonar配置到jenkins中，当使用jenkins自动化部署项目时，就能够自动的对代码进行检查<br>1.手动下载jenkins插件<a href="https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Jenkins" target="_blank" rel="noopener">SonarQube Scanner for Jenkins</a>。也可以直接在jenkins中下载，在[Manage Jenkins]-[Global Tool Configuration]中配置JDK和Maven后，再在Jenkins上安装SonarQube插件。在[Manage Jenkins]-[Global Tool Configuration]中选择SonarQube Scanner for Jenkins插件，点击下载，下载完成后重启jenkins服务器。<br><img src="http://p25wdbssm.bkt.clouddn.com/sonar_jenkins_01.png" alt=""><br>2.jenkins重启成功后，打开[Manage Jenkins]-[Configure System]和[Manage Jenkins]-[Global Tool Configuration]，可以看到新增了Sonar Qube的选项。在[Manage Jenkins]-[Configure System]中配置SonarQube Server。<br><img src="http://p25wdbssm.bkt.clouddn.com/sonar_jenkins_02.png" alt=""><br>[Server authentication token]行对应的token请输入第一次启动sonar server时生成的token</p>
+<h2 id="在jenkins中配置sonar进行代码审查"><a href="#在jenkins中配置sonar进行代码审查" class="headerlink" title="在jenkins中配置sonar进行代码审查"></a>在jenkins中配置sonar进行代码审查</h2><p>&emsp;&emsp;完成好以上步骤后，在进行项目编译打包时，点击[增加构建步骤]，会发现多了Execute SonarQube Scanner选项<br><img src="http://p25wdbssm.bkt.clouddn.com/sonar_jenkins_03.png" alt=""><br>在Execute SonarQube Scanner中进行如下配置：<br><img src="http://p25wdbssm.bkt.clouddn.com/sonar_jenkins_04.png" alt=""></p>
+<p>Task to run 可以随便写，JDK一定要选择jenkins 中配置的jdk(版本不能太低，sonar要求jdk版本为1.8)，Path to project properties: 相当于sonar-scanner中的sonar-project.properties，如果在项目的根目录下有sonar-scanner配置文件配置即可。Additional arguments中可写可不写，个人习惯加上“-X”,表示以Debug的形式启动，能够显示更多的信息。<br>Analysis properties示例如下图所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sonar.projectKey=$proName</span><br><span class="line">sonar.projectName=$proName</span><br><span class="line">sonar.projectVersion=1.0</span><br><span class="line">sonar.sources=$&#123;proName&#125;/src</span><br><span class="line">sonar.language=java  </span><br><span class="line">sonar.sourceEncoding=UTF-8</span><br></pre></td></tr></table></figure></p>
+<p>在sonar-java插件4.10版本之后，还需要添加sonar.java.binaries=target/classes。但是因为打包时可能没有编译后的文件，所以我在sonarqube中替换了sonar-java-plugin文件，将版本改为4.10。</p>
+<p>保存好Execute SonarQube Scanner配置，开始编译打包，查看日志<br><img src="http://p25wdbssm.bkt.clouddn.com/sonar_jenkins_07.png" alt=""></p>
+<p>然后打开sonarqube server,即可查看分析结果<br><img src="http://p25wdbssm.bkt.clouddn.com/sonar_jenkins_08.png" alt=""></p>
+<h2 id="关于启动与关闭的问题-amp"><a href="#关于启动与关闭的问题-amp" class="headerlink" title="关于启动与关闭的问题&amp;"></a>关于启动与关闭的问题&amp;</h2><p>&emsp;&emsp;sonar 如果安装在Linux服务器下，启动和关闭都不是问题，进入sonar安装目录的bin文件夹的Linux-x86-64目录下，直接使用命令启动<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 启动sonar</span><br><span class="line">$ ./sonar.sh start</span><br><span class="line"># 关闭sonar</span><br><span class="line">$ ./sonar.sh stop</span><br></pre></td></tr></table></figure></p>
+<p>哎！公司服务器抽风，Linux安装一直出现静态资源没法加载，估计是环境的问题，但是没法改，只能在Windows服务器上安装。<br>在Windows中启动比在Linux中更简单，直接进入安装目录下的[E:\sonarqube-6.7.3\bin\windows-x86-64]目录下，双击startSonar.bat启动。(选择Windows-x86-64还是32，根据系统中安装的jdk版本而定，必须跟jdk版本对应，Linux中同理)。<br>Windows中启动简单，但是关闭却比较复杂，各种关联文件，一个个的都必须释放才能彻底关闭。</p>
+
       
     </div>
     
     
     
+    <div>
+  <div>
+      
+        
+      
+</div>
+  
+  
+    <div>
+    
+        <div style="text-align:center;color: #cc3299;font-size:24px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+  
+    </div>
+    
+	
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>你的支持是我最大的动力</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://p25wdbssm.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%94%B6%E6%AC%BE%E7%A0%81.jpg" alt="Sunny 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/工具/" rel="tag"><i class="fa fa-tag"></i> 工具</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/28/spring boot配置热部署/" rel="next" title="spring boot 配置热部署">
+                <i class="fa fa-chevron-left"></i> spring boot 配置热部署
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "32",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "32"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
   </div>
 
 
@@ -541,6 +805,17 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+	
+  
+  
+
 
 
 
@@ -716,7 +991,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#建站日志"><span class="nav-number">1.</span> <span class="nav-text">建站日志</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#SonarQube-简介"><span class="nav-number">1.</span> <span class="nav-text">SonarQube 简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SonarQube与Sonar-Scanner的安装与配置"><span class="nav-number">2.</span> <span class="nav-text">SonarQube与Sonar-Scanner的安装与配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载sonarQube安装包"><span class="nav-number">2.1.</span> <span class="nav-text">下载sonarQube安装包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建sonar数据库"><span class="nav-number">2.2.</span> <span class="nav-text">创建sonar数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置sonar应用mysql"><span class="nav-number">2.3.</span> <span class="nav-text">配置sonar应用mysql</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置Sonar-Scanner-进行项目代码审查"><span class="nav-number">3.</span> <span class="nav-text">配置Sonar-Scanner 进行项目代码审查</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将sonar集成到jenkins中"><span class="nav-number">4.</span> <span class="nav-text">将sonar集成到jenkins中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在jenkins中配置sonar进行代码审查"><span class="nav-number">5.</span> <span class="nav-text">在jenkins中配置sonar进行代码审查</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于启动与关闭的问题-amp"><span class="nav-number">6.</span> <span class="nav-text">关于启动与关闭的问题&amp;</span></a></li></ol></div>
             
 
           </div>
@@ -933,6 +1208,30 @@
       </style>
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'chengshi2017',
+            repo: 'issues',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'f16d8320c6a04e0f903607fc1a3657489482e26d',
+            
+                client_id: '052a695156d45b229817'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
     
 
 
