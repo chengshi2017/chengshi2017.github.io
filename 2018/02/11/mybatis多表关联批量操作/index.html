@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;最近在开发一个可持续集成平台devops，在开发时涉及到了批量操作，关键是数据库还都是多张表关联的，由于以前对这方面接触比较少，所以还是感觉比较困难的。经过几天的学习和实践，最终还是成功实现了。代码还未优化，所以有些粗糙，先写篇博客记录下，后续会进行代码的优化。 为什么要执行批量操作&amp;emsp;&amp;emsp;MyBatis操作数据库时经常会出现批量操作，例如：批量新增，批量修">
+<meta name="description" content="&amp;emsp;&amp;emsp;最近在开发一个可持续集成平台devops，在开发时涉及到了批量操作，关键是数据库还都是多张表关联的，由于以前对这方面接触比较少，所以还是感觉比较困难的。经过几天的学习和实践，最终还是成功实现了。代码还未优化，所以有些粗糙，先写篇博客记录下，后续会进行代码的优化。">
 <meta name="keywords" content="后端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mybatis多表关联批量操作">
 <meta property="og:url" content="http://yoursite.com/2018/02/11/mybatis多表关联批量操作/index.html">
 <meta property="og:site_name" content="Sunny">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;最近在开发一个可持续集成平台devops，在开发时涉及到了批量操作，关键是数据库还都是多张表关联的，由于以前对这方面接触比较少，所以还是感觉比较困难的。经过几天的学习和实践，最终还是成功实现了。代码还未优化，所以有些粗糙，先写篇博客记录下，后续会进行代码的优化。 为什么要执行批量操作&amp;emsp;&amp;emsp;MyBatis操作数据库时经常会出现批量操作，例如：批量新增，批量修">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;最近在开发一个可持续集成平台devops，在开发时涉及到了批量操作，关键是数据库还都是多张表关联的，由于以前对这方面接触比较少，所以还是感觉比较困难的。经过几天的学习和实践，最终还是成功实现了。代码还未优化，所以有些粗糙，先写篇博客记录下，后续会进行代码的优化。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-18T10:02:21.803Z">
+<meta property="og:updated_time" content="2018-04-18T10:05:26.646Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mybatis多表关联批量操作">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;最近在开发一个可持续集成平台devops，在开发时涉及到了批量操作，关键是数据库还都是多张表关联的，由于以前对这方面接触比较少，所以还是感觉比较困难的。经过几天的学习和实践，最终还是成功实现了。代码还未优化，所以有些粗糙，先写篇博客记录下，后续会进行代码的优化。 为什么要执行批量操作&amp;emsp;&amp;emsp;MyBatis操作数据库时经常会出现批量操作，例如：批量新增，批量修">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;最近在开发一个可持续集成平台devops，在开发时涉及到了批量操作，关键是数据库还都是多张表关联的，由于以前对这方面接触比较少，所以还是感觉比较困难的。经过几天的学习和实践，最终还是成功实现了。代码还未优化，所以有些粗糙，先写篇博客记录下，后续会进行代码的优化。">
 
 
 
@@ -636,6 +636,7 @@
 
       
         <p>&emsp;&emsp;最近在开发一个可持续集成平台devops，在开发时涉及到了批量操作，关键是数据库还都是多张表关联的，由于以前对这方面接触比较少，所以还是感觉比较困难的。经过几天的学习和实践，最终还是成功实现了。代码还未优化，所以有些粗糙，先写篇博客记录下，后续会进行代码的优化。</p>
+<a id="more"></a>
 <h4 id="为什么要执行批量操作"><a href="#为什么要执行批量操作" class="headerlink" title="为什么要执行批量操作"></a>为什么要执行批量操作</h4><p>&emsp;&emsp;MyBatis操作数据库时经常会出现批量操作，例如：批量新增，批量修改，批量删除。批量操作要比数据循环执行的效率要高很多，特别是当需要操作的数据量特别大的情况下。循环执行每次都需要跟数据库建立一个连接，当连接数达到连接池上限时，系统会直接瘫痪。所以循环执行操作数据库尽量不要采用。</p>
 <h4 id="foreach标签"><a href="#foreach标签" class="headerlink" title="foreach标签"></a>foreach标签</h4><p>foreach主要是用在构建in条件中，它主要是在SQL语句中进行循环迭代一个集合。<br>foreach标签的主要属性有collection、index、item、separator、open、close。<br>&emsp;&emsp; collection最容易出错，该属性在使用前必须先指定。根据传过来的参数，一般可以有三种类型（list、array、map）。<br>&emsp;&emsp; index指定一个名字，用于在迭代的过程中迭代到的位置。<br>&emsp;&emsp; item表示集合中每一个元素进行迭代时的别名。<br>&emsp;&emsp; separator指定在迭代时以什么符号作为分隔符。<br>&emsp;&emsp; open、close表示语句以什么开始，以什么结束。</p>
 <h4 id="多表关联"><a href="#多表关联" class="headerlink" title="多表关联"></a>多表关联</h4><p>mybatis关于多表关联有相应的处理办法，提供了association和collection两个标签。<br>&emsp;&emsp; association通常是用来对应一对一的关系。<br>&emsp;&emsp; collection通常是用来对应一对多关系或者是多对多的关系。<br>但是因为项目是前后端分离，公司自己封装了框架，对复杂类型的数据不太友好，加上项目数据量也不算太大，所以没有使用这两个标签，而是直接新建一个实体类包含两张表里面的共同数据，然后在mapper中映射到创建的实体即可。</p>
