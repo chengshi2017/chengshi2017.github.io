@@ -82,7 +82,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="后端," />
 
 
 
@@ -95,16 +95,18 @@
 
 
 
-<meta name="description" content="多坚持一秒钟，你就比别人多一秒钟去学习">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sunny">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta name="description" content="&amp;emsp;&amp;emsp;最近在开发一个可持续集成平台devops，在开发时涉及到了批量操作，关键是数据库还都是多张表关联的，由于以前对这方面接触比较少，所以还是感觉比较困难的。经过几天的学习和实践，最终还是成功实现了。代码还未优化，所以有些粗糙，先写篇博客记录下，后续会进行代码的优化。 为什么要执行批量操作&amp;emsp;&amp;emsp;MyBatis操作数据库时经常会出现批量操作，例如：批量新增，批量修">
+<meta name="keywords" content="后端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mybatis多表关联批量操作">
+<meta property="og:url" content="http://yoursite.com/2018/02/11/mybatis多表关联批量操作/index.html">
 <meta property="og:site_name" content="Sunny">
-<meta property="og:description" content="多坚持一秒钟，你就比别人多一秒钟去学习">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;最近在开发一个可持续集成平台devops，在开发时涉及到了批量操作，关键是数据库还都是多张表关联的，由于以前对这方面接触比较少，所以还是感觉比较困难的。经过几天的学习和实践，最终还是成功实现了。代码还未优化，所以有些粗糙，先写篇博客记录下，后续会进行代码的优化。 为什么要执行批量操作&amp;emsp;&amp;emsp;MyBatis操作数据库时经常会出现批量操作，例如：批量新增，批量修">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-18T10:02:21.803Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sunny">
-<meta name="twitter:description" content="多坚持一秒钟，你就比别人多一秒钟去学习">
+<meta name="twitter:title" content="mybatis多表关联批量操作">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;最近在开发一个可持续集成平台devops，在开发时涉及到了批量操作，关键是数据库还都是多张表关联的，由于以前对这方面接触比较少，所以还是感觉比较困难的。经过几天的学习和实践，最终还是成功实现了。代码还未优化，所以有些粗糙，先写篇博客记录下，后续会进行代码的优化。 为什么要执行批量操作&amp;emsp;&amp;emsp;MyBatis操作数据库时经常会出现批量操作，例如：批量新增，批量修">
 
 
 
@@ -134,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/11/mybatis多表关联批量操作/"/>
 
 
 
 
 
-  <title>归档 | Sunny</title>
+  <title>mybatis多表关联批量操作 | Sunny</title>
   
 
 
@@ -169,7 +171,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 	<a href="https://github.com/chengshi2017">
 	<img style="position: absolute; top: 0; right: 0; border: 0;" 
@@ -502,74 +504,320 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 11 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/11/mybatis多表关联批量操作/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sunny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://p25wdbssm.bkt.clouddn.com/%E5%A4%B4%E5%83%8F.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sunny">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/12/30/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">mybatis多表关联批量操作</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-30T17:51:33+08:00"
-              content="2017-12-30" >
-          12-30
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-11T13:17:26+08:00">
+                2018-02-11
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mybatis/" itemprop="url" rel="index">
+                    <span itemprop="name">mybatis</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/02/11/mybatis多表关联批量操作/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/11/mybatis多表关联批量操作/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  7
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <p>&emsp;&emsp;最近在开发一个可持续集成平台devops，在开发时涉及到了批量操作，关键是数据库还都是多张表关联的，由于以前对这方面接触比较少，所以还是感觉比较困难的。经过几天的学习和实践，最终还是成功实现了。代码还未优化，所以有些粗糙，先写篇博客记录下，后续会进行代码的优化。</p>
+<h4 id="为什么要执行批量操作"><a href="#为什么要执行批量操作" class="headerlink" title="为什么要执行批量操作"></a>为什么要执行批量操作</h4><p>&emsp;&emsp;MyBatis操作数据库时经常会出现批量操作，例如：批量新增，批量修改，批量删除。批量操作要比数据循环执行的效率要高很多，特别是当需要操作的数据量特别大的情况下。循环执行每次都需要跟数据库建立一个连接，当连接数达到连接池上限时，系统会直接瘫痪。所以循环执行操作数据库尽量不要采用。</p>
+<h4 id="foreach标签"><a href="#foreach标签" class="headerlink" title="foreach标签"></a>foreach标签</h4><p>foreach主要是用在构建in条件中，它主要是在SQL语句中进行循环迭代一个集合。<br>foreach标签的主要属性有collection、index、item、separator、open、close。<br>&emsp;&emsp; collection最容易出错，该属性在使用前必须先指定。根据传过来的参数，一般可以有三种类型（list、array、map）。<br>&emsp;&emsp; index指定一个名字，用于在迭代的过程中迭代到的位置。<br>&emsp;&emsp; item表示集合中每一个元素进行迭代时的别名。<br>&emsp;&emsp; separator指定在迭代时以什么符号作为分隔符。<br>&emsp;&emsp; open、close表示语句以什么开始，以什么结束。</p>
+<h4 id="多表关联"><a href="#多表关联" class="headerlink" title="多表关联"></a>多表关联</h4><p>mybatis关于多表关联有相应的处理办法，提供了association和collection两个标签。<br>&emsp;&emsp; association通常是用来对应一对一的关系。<br>&emsp;&emsp; collection通常是用来对应一对多关系或者是多对多的关系。<br>但是因为项目是前后端分离，公司自己封装了框架，对复杂类型的数据不太友好，加上项目数据量也不算太大，所以没有使用这两个标签，而是直接新建一个实体类包含两张表里面的共同数据，然后在mapper中映射到创建的实体即可。</p>
+<h4 id="批量增加"><a href="#批量增加" class="headerlink" title="批量增加"></a>批量增加</h4><p>在添加的过程中，其它的字段都相同，但是可以输入多个IP,有多少个IP,就在数据库中添加多少条数据实现批量新增。在项目中，前台传给后台一个对象AppInfoFilter,因为有部分字段需要转换，所以需要将字段转换后封装到集合然后返回前台。核心代码如下：</p>
+<h5 id="数据的转换"><a href="#数据的转换" class="headerlink" title="数据的转换"></a>数据的转换</h5><p>先将前台传过来的数据进行转换，然后将多个IP进行拆分，将所有字段封装到一个新的对象，最后将这个对象封装成集合传到mapper中进行批量增加。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">@Transactional(isolation = Isolation.READ_UNCOMMITTED, propagation = Propagation.REQUIRED)</span><br><span class="line">@Override</span><br><span class="line">public ResList&lt;AppInfo&gt; save(AppInfoFilter appInfoFilter) &#123;</span><br><span class="line">    List&lt;String&gt; record=appInfoFilter.getHostIp();</span><br><span class="line">    List&lt;AppInfo&gt; list=new ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    //通过主体名称查询主体编号，然后将主体编号存入cm_host_system</span><br><span class="line">    String projectName=appInfoFilter.getProjectName();</span><br><span class="line">    CmProject cmProject=cmProjectMapper.selectByName(projectName);</span><br><span class="line"></span><br><span class="line">    //通过组件名称去应用组件表中查询组件类型，然后将组件类型存入cm_app_components</span><br><span class="line">    String appType=appInfoFilter.getAppType();</span><br><span class="line">    List&lt;CmComponents&gt; list1=cmComponentsMapper.selectByName(appType);</span><br><span class="line"></span><br><span class="line">    //通过systemName去cm_system表中查询system_id,然后存入cm_host_system</span><br><span class="line">    String systemName=appInfoFilter.getSystemName();</span><br><span class="line">    List&lt;CmSystem&gt; list2=cmSystemMapper.selectByName(systemName);</span><br><span class="line"></span><br><span class="line">    //将AppInfo封装成一个list集合</span><br><span class="line">    for (String hostIp:record) &#123;</span><br><span class="line">        AppInfo appInfo = new AppInfo();</span><br><span class="line">        appInfo.setUuid(UUID.getUUID());</span><br><span class="line">        appInfo.setHostId(hostIp);</span><br><span class="line">        appInfo.setHostIp(hostIp);</span><br><span class="line">        appInfo.setCreateTime(new Date());</span><br><span class="line">        appInfo.setAppId(appInfo.getUuid());</span><br><span class="line">        //将其它的转换抽取出来</span><br><span class="line">        convert(appInfoFilter);</span><br><span class="line">        //通过其他的信息查询出来的信息</span><br><span class="line">        appInfo.setProjectNum(cmProject.getNumber());</span><br><span class="line">        appInfo.setType(list1.get(0).getType());</span><br><span class="line">        appInfo.setSystemId(list2.get(0).getNumber());</span><br><span class="line">        list.add(appInfo);</span><br><span class="line">    &#125;</span><br><span class="line">    //先向关联表cm_host_system中添加数据</span><br><span class="line">    hostMapper.batchInsert(list);</span><br><span class="line"></span><br><span class="line">    //再向参数表中添加数据</span><br><span class="line">    paramMapper.batchInsert(list);</span><br><span class="line"></span><br><span class="line">    componentsMapper.batchInsert(list);</span><br><span class="line"></span><br><span class="line">    ResList&lt;AppInfo&gt; resList=new ResList&lt;AppInfo&gt;(list);</span><br><span class="line"></span><br><span class="line">    return resList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>代码未进行优化，所以看起来有点乱。由于是三张表关联，所以分别想三张表中插入数据（找了好久资料也想了很久也没实现一条SQL实现三张表插入）。</p>
+<h6 id="将集合中的数据插入到数据库中"><a href="#将集合中的数据插入到数据库中" class="headerlink" title="将集合中的数据插入到数据库中"></a>将集合中的数据插入到数据库中</h6><p>执行单表批量增加的SQL语句：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;insert id=&quot;batchInsert&quot; parameterType=&quot;java.util.List&quot;&gt;</span><br><span class="line">  insert into cm_app_components</span><br><span class="line">  (UUID, APP_TYPE, APP_VERSION,</span><br><span class="line">    TYPE, HOST_ID, HOST_IP,</span><br><span class="line">    PORT, DESCRIPTION,</span><br><span class="line">    CREATE_TIME, UPDATE_TIME,</span><br><span class="line">    SCRIPT_PATH</span><br><span class="line">  )</span><br><span class="line">  VALUES</span><br><span class="line">  &lt;foreach collection=&quot;list&quot; item=&quot;item&quot; index=&quot;index&quot; separator=&quot;,&quot;&gt;</span><br><span class="line">    (#&#123;item.uuid,jdbcType=VARCHAR&#125;, #&#123;item.appType,jdbcType=VARCHAR&#125;, #&#123;item.appVersion,jdbcType=VARCHAR&#125;,</span><br><span class="line">    #&#123;item.type,jdbcType=VARCHAR&#125;, #&#123;item.hostId,jdbcType=VARCHAR&#125;, #&#123;item.hostIp,jdbcType=VARCHAR&#125;,</span><br><span class="line">    #&#123;item.port,jdbcType=VARCHAR&#125;, #&#123;item.description,jdbcType=VARCHAR&#125;,</span><br><span class="line">    #&#123;item.createTime,jdbcType=TIMESTAMP&#125;, #&#123;item.updateTime,jdbcType=TIMESTAMP&#125;,</span><br><span class="line">    #&#123;item.scriptPath,jdbcType=VARCHAR&#125;)</span><br><span class="line">  &lt;/foreach&gt;</span><br><span class="line">&lt;/insert&gt;</span><br></pre></td></tr></table></figure></p>
+<p>对于单表来说，批量增加还是比较简单的。但是这样非常消耗连接池资源。长久肯定是不可能的。</p>
+<h4 id="批量修改"><a href="#批量修改" class="headerlink" title="批量修改"></a>批量修改</h4><p>由于项目中此模块涉及到的字段太多，但是客户要求只有几个字段能够修改，其它字段全部设为不可修改状态，所以批量修改还是比较轻松的。类似于批量增加，还是先将要批量修改的对象封装成集合。</p>
+<h5 id="数据的封装"><a href="#数据的封装" class="headerlink" title="数据的封装"></a>数据的封装</h5><p>AppUpdateInfo 实体中只有四个字段，，替换掉AppInfo中的旧数据，将AppInfo封装成一个集合，然后利用SQL语句进行多表关联修改即可。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">//批量修改</span><br><span class="line">@Transactional(isolation = Isolation.READ_UNCOMMITTED, propagation = Propagation.REQUIRED)</span><br><span class="line">@Override</span><br><span class="line">public ResList&lt;AppInfo&gt; batchUpdate(AppUpdateInfo updateInfo) &#123;</span><br><span class="line">    List&lt;String&gt; record=updateInfo.getUuid();</span><br><span class="line">    List&lt;AppInfo&gt; list=new ArrayList&lt;AppInfo&gt;();</span><br><span class="line">    for (String uuid:record)&#123;</span><br><span class="line">        AppInfo appInfo=new AppInfo();</span><br><span class="line">        appInfo.setUuid(uuid);</span><br><span class="line">        appInfo.setAppVersion(updateInfo.getAppVersion());</span><br><span class="line">        appInfo.setScriptPath(updateInfo.getScriptPath());</span><br><span class="line">        appInfo.setDeployDir(updateInfo.getDeployDir());</span><br><span class="line">        appInfo.setAppDir(updateInfo.getAppDir());</span><br><span class="line">        appInfo.setUpdateTime(new Date());</span><br><span class="line">        list.add(appInfo);</span><br><span class="line">    &#125;</span><br><span class="line">    appMapper.batchUpdate(list);</span><br><span class="line">    ResList&lt;AppInfo&gt; resList=new ResList&lt;AppInfo&gt;(list);</span><br><span class="line">    return resList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="将数据库中的数据进行修改"><a href="#将数据库中的数据进行修改" class="headerlink" title="将数据库中的数据进行修改"></a>将数据库中的数据进行修改</h5><p>先将几张表进行关联，然后进行批量更新。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;update id=&quot;batchUpdate&quot; parameterType=&quot;java.util.List&quot;&gt;</span><br><span class="line">    &lt;foreach collection=&quot;list&quot; separator=&quot;,&quot; item=&quot;item&quot; index=&quot;index&quot;&gt;</span><br><span class="line">        UPDATE cm_app_components c LEFT JOIN</span><br><span class="line">        cm_app_components_param p</span><br><span class="line">        ON c.UUID=p.APP_ID</span><br><span class="line">        SET</span><br><span class="line">        c.APP_VERSION = #&#123;item.appVersion&#125;,</span><br><span class="line">        c.SCRIPT_PATH = #&#123;item.scriptPath&#125;,</span><br><span class="line">        p.DEPLOY_DIR = #&#123;item.deployDir&#125;,</span><br><span class="line">        p.APP_DIR = #&#123;item.appDir&#125;</span><br><span class="line">        WHERE</span><br><span class="line">        c.UUID = #&#123;item.uuid&#125;</span><br><span class="line">    &lt;/foreach&gt;</span><br><span class="line">&lt;/update&gt;</span><br></pre></td></tr></table></figure></p>
+<h4 id="批量删除"><a href="#批量删除" class="headerlink" title="批量删除"></a>批量删除</h4><p>批量删除根据传入的多个uuid进行删除，只需要在SQL中将多张表关联，然后用foreach遍历封装了uuid的list集合进行删除即可。<br>核心代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;delete id=&quot;batchDelete&quot; parameterType=&quot;java.util.List&quot;&gt;</span><br><span class="line">  DELETE c,s FROM cm_db_components c</span><br><span class="line">  LEFT JOIN cm_db_system s</span><br><span class="line">  ON c.UUID=s.P_UUID</span><br><span class="line">  WHERE c.UUID IN</span><br><span class="line">  &lt;foreach collection=&quot;list&quot; item=&quot;item&quot; index=&quot;index&quot; separator=&quot;,&quot; open=&quot;(&quot; close=&quot;)&quot;&gt;</span><br><span class="line">    #&#123;item&#125;</span><br><span class="line">  &lt;/foreach&gt;</span><br><span class="line">&lt;/delete&gt;</span><br></pre></td></tr></table></figure></p>
+<p>技术太low，代码写的很差，很多地方都可以优化，而且有些控制都没有加上。但是写这份代码对我的帮助挺大的，对mybatis的使用熟悉了很多。虽然这是我做的第二个项目，但是却走了整个的流程。学到的东西挺多的。</p>
+
+      
     </div>
+    
+    
+    
+    <div>
+  <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2018/02/11/mybatis多表关联批量操作/">mybatis多表关联批量操作</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Sunny 的个人博客">Sunny</a></p>
+  <p><span>发布时间:</span>2018年02月11日 - 13:02</p>
+  <p><span>最后更新:</span>2018年04月18日 - 18:04</p>
+  <p><span>原始链接:</span><a href="/2018/02/11/mybatis多表关联批量操作/" title="mybatis多表关联批量操作">http://yoursite.com/2018/02/11/mybatis多表关联批量操作/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/02/11/mybatis多表关联批量操作/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+      $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+        });
+    });  
+</script>
+
+      
+</div>
+  
+  
+    <div>
+    
+        <div style="text-align:center;color: #cc3299;font-size:24px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+  
+    </div>
+    
+	
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>你的支持是我最大的动力</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://p25wdbssm.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%94%B6%E6%AC%BE%E7%A0%81.jpg" alt="Sunny 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/后端/" rel="tag"><i class="fa fa-tag"></i> 后端</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/06/ArrayList和LinkedList的区别/" rel="next" title="ArrryList和LinkedList的区别">
+                <i class="fa fa-chevron-left"></i> ArrryList和LinkedList的区别
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/17/logback的使用和logback的配置/" rel="prev" title="logback的使用和logback的配置">
+                logback的使用和logback的配置 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "32",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "32"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -577,6 +825,17 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+	
+  
+  
+
 
 
 
@@ -599,8 +858,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -733,6 +1001,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么要执行批量操作"><span class="nav-number">1.</span> <span class="nav-text">为什么要执行批量操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#foreach标签"><span class="nav-number">2.</span> <span class="nav-text">foreach标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多表关联"><span class="nav-number">3.</span> <span class="nav-text">多表关联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#批量增加"><span class="nav-number">4.</span> <span class="nav-text">批量增加</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#数据的转换"><span class="nav-number">4.1.</span> <span class="nav-text">数据的转换</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#将集合中的数据插入到数据库中"><span class="nav-number">4.1.1.</span> <span class="nav-text">将集合中的数据插入到数据库中</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#批量修改"><span class="nav-number">5.</span> <span class="nav-text">批量修改</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#数据的封装"><span class="nav-number">5.1.</span> <span class="nav-text">数据的封装</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#将数据库中的数据进行修改"><span class="nav-number">5.2.</span> <span class="nav-text">将数据库中的数据进行修改</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#批量删除"><span class="nav-number">6.</span> <span class="nav-text">批量删除</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -885,6 +1169,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -936,6 +1224,30 @@
       </style>
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'chengshi2017',
+            repo: 'issues',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'f16d8320c6a04e0f903607fc1a3657489482e26d',
+            
+                client_id: '052a695156d45b229817'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
     
 
 
