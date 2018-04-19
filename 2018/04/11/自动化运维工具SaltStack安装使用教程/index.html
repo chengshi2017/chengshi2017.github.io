@@ -95,22 +95,22 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;系统自动化管理和配置工具SaltStack采用zeromq消息队列进行通信，和Puppet比起来，SaltStack速度快得多。目前SaltStack处于快速发展阶段，可以看做是强化的Func+弱化的Puppet的组合">
+<meta name="description" content="&amp;emsp;&amp;emsp;系统自动化管理和配置工具SaltStack采用zeromq消息队列进行通信，和Puppet比起来，SaltStack速度快得多。">
 <meta name="keywords" content="工具">
 <meta property="og:type" content="article">
 <meta property="og:title" content="自动化运维工具SaltStack安装使用教程">
 <meta property="og:url" content="http://yoursite.com/2018/04/11/自动化运维工具SaltStack安装使用教程/index.html">
 <meta property="og:site_name" content="Sunny">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;系统自动化管理和配置工具SaltStack采用zeromq消息队列进行通信，和Puppet比起来，SaltStack速度快得多。目前SaltStack处于快速发展阶段，可以看做是强化的Func+弱化的Puppet的组合">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;系统自动化管理和配置工具SaltStack采用zeromq消息队列进行通信，和Puppet比起来，SaltStack速度快得多。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/saltstack003.png">
 <meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/saltstack001.png">
 <meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/saltstack002.png">
 <meta property="og:image" content="http://p25wdbssm.bkt.clouddn.com/saltstack004.png">
-<meta property="og:updated_time" content="2018-04-19T06:29:25.546Z">
+<meta property="og:updated_time" content="2018-04-19T06:35:47.297Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="自动化运维工具SaltStack安装使用教程">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;系统自动化管理和配置工具SaltStack采用zeromq消息队列进行通信，和Puppet比起来，SaltStack速度快得多。目前SaltStack处于快速发展阶段，可以看做是强化的Func+弱化的Puppet的组合">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;系统自动化管理和配置工具SaltStack采用zeromq消息队列进行通信，和Puppet比起来，SaltStack速度快得多。">
 <meta name="twitter:image" content="http://p25wdbssm.bkt.clouddn.com/saltstack003.png">
 
 
@@ -640,7 +640,7 @@
       
 
       
-        <p>&emsp;&emsp;系统自动化管理和配置工具SaltStack采用zeromq消息队列进行通信，和Puppet比起来，SaltStack速度快得多。目前SaltStack处于快速发展阶段，可以看做是强化的Func+弱化的Puppet的组合<a id="more"></a>这也间接的反映出了SaltStack的两大功能：远程执行和配置管理。</p>
+        <p>&emsp;&emsp;系统自动化管理和配置工具SaltStack采用zeromq消息队列进行通信，和Puppet比起来，SaltStack速度快得多。<a id="more"></a>目前SaltStack处于快速发展阶段，可以看做是强化的Func+弱化的Puppet的组合这也间接的反映出了SaltStack的两大功能：远程执行和配置管理。</p>
 <h4 id="SaltStack的安装配置"><a href="#SaltStack的安装配置" class="headerlink" title="SaltStack的安装配置"></a>SaltStack的安装配置</h4><p>&emsp;&emsp;和大多数类似工具一样，SaltStack是一个基于C/S的远程控制软件，需要在一台机器（主控）上安装服务端软件（salt-master），在需要被控制的机器（受控）上安装客户端软件（salt-minion）。受控机器可以有多台，但是主控机器只能有一台。当在主控机器上给受控机器发指令，在受控机器上执行主控机器发出的指令。<br>&emsp;&emsp;说明：由于项目上的需要，salt-master安装在服务器上（172.17.20.140（Linux机器）），受控端安装了两台机器，一台是本机用作测试用，另一台安装在需要被调控的服务器上（192.168.5.252（Windows机器））</p>
 <h5 id="服务端salt-master的安装"><a href="#服务端salt-master的安装" class="headerlink" title="服务端salt-master的安装"></a>服务端salt-master的安装</h5><p>&emsp;&emsp;首先安装salt-master 运行所需要的依赖，因为SaltStack使用Python写的，所以必须系统必须安装Python环境。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ yum install python-jinja2 -y</span><br><span class="line">$ yum install m2cryto -y</span><br><span class="line">$ wget http://pyyaml.org/download/libyaml/yaml-0.1.6.tar.gz</span><br></pre></td></tr></table></figure></p>
 <p>解压并安装yaml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ tar zvxf  yaml-0.1.6.tar.gz</span><br><span class="line">$ cd  yaml-0.1.6</span><br><span class="line">$ ./configure</span><br><span class="line">$ make&amp;&amp;make install</span><br></pre></td></tr></table></figure></p>
