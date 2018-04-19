@@ -2106,7 +2106,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffe3ff;
+  background: #ffc7be;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3310,12 +3310,6 @@ pre {
   height: 3px;
   background: #dc143c;
   text-align: center;
-}
-* {
-  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword2.ico"), auto !important;
-}
-:active {
-  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword1.ico"), auto !important;
 }
 @media screen and (min-width: 1200px) {
   body {
