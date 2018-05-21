@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/05/15/velocity%E6%A8%A1%E6%9D%BF%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</loc>
+    
+    <lastmod>2018-05-15T08:41:45.426Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/03/11/%E6%A8%A1%E6%9D%BF%E8%AF%AD%E8%A8%80thymeleaf%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</loc>
     
     <lastmod>2018-05-15T05:55:11.013Z</lastmod>
