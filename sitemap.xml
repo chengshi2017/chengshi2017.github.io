@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2018/05/15/velocity%E6%A8%A1%E6%9D%BF%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</loc>
+    <loc>http://yoursite.com/2018/03/14/Echarts%E4%BD%BF%E7%94%A8ajax%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8A%A0%E8%BD%BD/</loc>
     
-    <lastmod>2018-06-17T09:59:54.174Z</lastmod>
+    <lastmod>2018-06-18T10:58:30.418Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/11/%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E7%BB%B4%E5%B7%A5%E5%85%B7SaltStack%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2018-06-17T10:02:56.852Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2018/03/11/%E6%A8%A1%E6%9D%BF%E8%AF%AD%E8%A8%80thymeleaf%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</loc>
     
-    <lastmod>2018-05-15T05:55:11.013Z</lastmod>
+    <lastmod>2018-06-17T10:02:51.746Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/15/velocity%E6%A8%A1%E6%9D%BF%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</loc>
+    
+    <lastmod>2018-06-17T09:59:54.174Z</lastmod>
     
   </url>
   
@@ -33,13 +47,6 @@
     <loc>http://yoursite.com/2018/03/28/spring%20boot%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6application.properties%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2018-04-19T09:23:59.196Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/11/%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E7%BB%B4%E5%B7%A5%E5%85%B7SaltStack%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
-    
-    <lastmod>2018-04-19T09:23:58.813Z</lastmod>
     
   </url>
   
