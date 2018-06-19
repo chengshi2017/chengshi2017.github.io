@@ -82,7 +82,7 @@
 
 
 
-  <meta name="keywords" content="工具," />
+  <meta name="keywords" content="前端," />
 
 
 
@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="git 简介git 是一款分布式的版本控制系统，其核心是分支，分支的意义在于可以将项目代码按照功能和模块拆分为不同的分支。在 git 中，工作目录下面的所有文件都不外乎两种状态： 已跟踪和未跟踪。">
-<meta name="keywords" content="工具">
+<meta name="description" content="&amp;emsp;&amp;emsp;在写项目的时候，由于数据比较多，删除数据的时候一个一个的点击删除比较麻烦，所以准备在项目中使用批量删除的功能。批量删除在项目中的实现比较简单。">
+<meta name="keywords" content="前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git总结">
-<meta property="og:url" content="http://yoursite.com/2018/01/01/git/index.html">
+<meta property="og:title" content="jquery+ajax实现数据的批量删除">
+<meta property="og:url" content="http://yoursite.com/2018/03/28/jquery+ajax实现数据的批量删除/index.html">
 <meta property="og:site_name" content="Jeremy">
-<meta property="og:description" content="git 简介git 是一款分布式的版本控制系统，其核心是分支，分支的意义在于可以将项目代码按照功能和模块拆分为不同的分支。在 git 中，工作目录下面的所有文件都不外乎两种状态： 已跟踪和未跟踪。">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;在写项目的时候，由于数据比较多，删除数据的时候一个一个的点击删除比较麻烦，所以准备在项目中使用批量删除的功能。批量删除在项目中的实现比较简单。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-19T09:23:58.234Z">
+<meta property="og:updated_time" content="2018-06-19T12:54:10.302Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git总结">
-<meta name="twitter:description" content="git 简介git 是一款分布式的版本控制系统，其核心是分支，分支的意义在于可以将项目代码按照功能和模块拆分为不同的分支。在 git 中，工作目录下面的所有文件都不外乎两种状态： 已跟踪和未跟踪。">
+<meta name="twitter:title" content="jquery+ajax实现数据的批量删除">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;在写项目的时候，由于数据比较多，删除数据的时候一个一个的点击删除比较麻烦，所以准备在项目中使用批量删除的功能。批量删除在项目中的实现比较简单。">
 
 
 
@@ -136,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/01/01/git/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/28/jquery+ajax实现数据的批量删除/"/>
 
 
 
 
 
-  <title>Git总结 | Jeremy</title>
+  <title>jquery+ajax实现数据的批量删除 | Jeremy</title>
   
 
 
@@ -325,7 +325,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/01/git/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/28/jquery+ajax实现数据的批量删除/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jeremy">
@@ -342,7 +342,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Git总结</h1>
+          <h1 class="post-title" itemprop="name headline">jquery+ajax实现数据的批量删除</h1>
         
 
         <div class="post-meta">
@@ -354,8 +354,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-01T19:31:24+08:00">
-                2018-01-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-28T16:29:11+08:00">
+                2018-03-28
               </time>
             
 
@@ -377,8 +377,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/工具/" itemprop="url" rel="index">
-                    <span itemprop="name">工具</span>
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
                   </a>
                 </span>
 
@@ -411,7 +411,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  7
                 </span>
               
             </div>
@@ -432,49 +432,21 @@
       
 
       
-        <h2 id="git-简介"><a href="#git-简介" class="headerlink" title="git 简介"></a>git 简介</h2><p><a href="https://baike.baidu.com/item/GIT/12647237?fr=aladdin" target="_blank" rel="noopener">git</a> 是一款分布式的版本控制系统，其核心是分支，分支的意义在于可以将项目代码按照功能和模块拆分为不同的分支。<br>在 git 中，工作目录下面的所有文件都不外乎两种状态： <strong>已跟踪</strong>和<strong>未跟踪</strong>。</p>
+        <p>&emsp;&emsp;在写项目的时候，由于数据比较多，删除数据的时候一个一个的点击删除比较麻烦，所以准备在项目中使用批量删除的功能。批量删除在项目中的实现比较简单。</p>
 <a id="more"></a>
-<p>已跟踪文件是指已经被纳入git中，在版本控制器中有它们的记录，但是当我们对文件进行修改之后，文件变得和git中的不一样，那么它就属于未跟踪文件。初次克隆某个仓库时，所有文件都属于已跟踪文件。</p>
-<h2 id="git-常用指令"><a href="#git-常用指令" class="headerlink" title="git 常用指令"></a>git 常用指令</h2><h3 id="git-pull"><a href="#git-pull" class="headerlink" title="git pull"></a><font color="#ff0000">git pull</font></h3><p>作用</p>
-<blockquote>
-<p>将远程代码仓库里的代码下载下来并自动整合到当前工作分支</p>
-</blockquote>
-<p>用法： <strong>git pull origin master</strong></p>
-<p>将origin这个版本库中的代码更新到本地的master主支，类似于SVN的<font color="#99ff00">update</font></p>
-<h3 id="git-add"><a href="#git-add" class="headerlink" title="git add"></a><font color="#ff0000">git add</font></h3><p>作用</p>
-<blockquote>
-<p>是将当前更改或者新增的文件加入到Git的索引中，加入到Git的索引中就表示记入了版本历史中，这也是提交之前所需要执行的一步</p>
-</blockquote>
-<p>用法： <strong>git add app/model/user.java</strong></p>
-<p>增加app/model/user.java文件到Git的索引中,该功能类似于SVN的<font color="#99ff00">add</font></p>
-<h3 id="git-rm"><a href="#git-rm" class="headerlink" title="git rm"></a><font color="#ff0000">git rm</font></h3><p>作用</p>
-<blockquote>
-<p>从当前的工作空间中和索引中删除文件</p>
-</blockquote>
-<p>用法： <strong>git rm app/model/user.java</strong></p>
-<p>删除工作空间中或者索引中的app/model/user.java文件，该功能类似于SVN的<font color="#99ff00">rm、del</font></p>
-<h3 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a><font color="#ff0000">git commit</font></h3><p>作用</p>
-<blockquote>
-<p>将所有添加到索引库的文件添加到本地仓库<br>文件一旦commit之后，就会在git中形成一个历史版本，以后无论怎么变都能够找到此次提交的记录。</p>
-</blockquote>
-<p>用法： <strong>git commit -m story #3, add user model</strong></p>
-<p>提交的时候必须用-m来输入一条提交信息，该功能类似于SVN中的<font color="#99ff00">commit</font></p>
-<h3 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a><font color="#ff0000">git push</font></h3><p>作用</p>
-<blockquote>
-<p>将本地仓库中的修改推送到远程仓库</p>
-</blockquote>
-<p>用法：<strong>git push origin</strong></p>
-<p>将本地的代码推送到名为origin的远程版本库中</p>
-<h3 id="git-log"><a href="#git-log" class="headerlink" title="git log"></a><font color="#ff0000">git log</font></h3><p>作用</p>
-<blockquote>
-<p>查看git的历史日志</p>
-</blockquote>
-<p>该功能类似于SVN的<font color="#99ff00">log</font></p>
-<h3 id="git-revert"><a href="#git-revert" class="headerlink" title="git revert"></a><font color="#ff0000">git revert</font></h3><p>作用</p>
-<blockquote>
-<p>还原一个版本的修改，必须提供一个具体的Git版本号，Git的版本号都是生成的一个哈希值</p>
-</blockquote>
-<p>用法：<strong>git revert bbaf6fb5060b4875b18ff9ff637ce118256d6f20</strong></p>
+<p>批量删除功能的实现主要难度是在前端，在后端只需要用mybatis做一个批量删除的接口就行。</p>
+<h5 id="1-增加表格数据勾选框"><a href="#1-增加表格数据勾选框" class="headerlink" title="1.增加表格数据勾选框"></a>1.增加表格数据勾选框</h5><p>如果要在表格数据中实现批量删除，那么最基本的需要一个勾选框，选中了数据之前的勾选框才会进行删除。因此我们首先要在表格中加入勾选框，代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">    &lt;table class=&quot;table table-border table-bordered table-bg table-hover table-sort&quot;&gt;</span><br><span class="line">        &lt;thead&gt;</span><br><span class="line">        &lt;tr class=&quot;text-c&quot;&gt;</span><br><span class="line">            &lt;th width=&quot;25&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;subCheck&quot; id=&quot;subCheck&quot;/&gt;&lt;/th&gt;</span><br><span class="line">            &lt;th width=&quot;40&quot;&gt;序号&lt;/th&gt;</span><br><span class="line">            &lt;th width=&quot;&quot;&gt;员工工号&lt;/th&gt;</span><br><span class="line">            &lt;th width=&quot;&quot;&gt;员工姓名&lt;/th&gt;</span><br><span class="line">            &lt;th width=&quot;&quot;&gt;手机号&lt;/th&gt;</span><br><span class="line">            &lt;th width=&quot;&quot;&gt;加入时间&lt;/th&gt;</span><br><span class="line">            &lt;th width=&quot;&quot;&gt;所属部门&lt;/th&gt;</span><br><span class="line">            &lt;th width=&quot;&quot;&gt;所属职位&lt;/th&gt;</span><br><span class="line">            &lt;th width=&quot;&quot;&gt;是否为管理员&lt;/th&gt;</span><br><span class="line">            &lt;th width=&quot;&quot;&gt;工作状态&lt;/th&gt;</span><br><span class="line">            &lt;th width=&quot;&quot;&gt;操作&lt;/th&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">        &lt;/thead&gt;</span><br><span class="line">        &lt;tbody&gt;</span><br><span class="line">        &lt;tr class=&quot;text-c&quot; th:each=&quot;item:$&#123;lists&#125;&quot;&gt;</span><br><span class="line">            &lt;td&gt;&lt;input type=&quot;checkbox&quot; th:attr=&quot;value=$&#123;item.empId&#125;&quot; name=&quot;subCheck&quot; /&gt;&lt;/td&gt;</span><br><span class="line">            &lt;td th:text=&quot;$&#123;itemStat.count&#125;&quot;&gt;&lt;/td&gt;</span><br><span class="line">            &lt;td th:text=&quot;$&#123;item.empNum&#125;&quot;&gt;&lt;/td&gt;</span><br><span class="line">            &lt;td th:text=&quot;$&#123;item.empName&#125;&quot;&gt;&lt;/td&gt;</span><br><span class="line">            &lt;td th:text=&quot;$&#123;item.phone&#125;&quot;&gt;&lt;/td&gt;</span><br><span class="line">            &lt;td th:text=&quot;$&#123;#dates.format(item.createTime,&apos;yyyy-MM-dd&apos;)&#125;&quot;&gt;&lt;/td&gt;</span><br><span class="line">            &lt;td th:text=&quot;$&#123;item.deptName&#125;&quot;&gt;&lt;/td&gt;</span><br><span class="line">            &lt;td th:text=&quot;$&#123;item.jobName&#125;&quot;&gt;&lt;/td&gt;</span><br><span class="line">            &lt;td class=&quot;flag&quot; th:attr=&quot;value=$&#123;item.flag&#125;&quot; th:text=&quot;$&#123;item.roleName&#125;==null?&apos;暂未分配&apos;:$&#123;item.roleName&#125;&quot;&gt;&lt;/td&gt;</span><br><span class="line">            &lt;th:block th:if=&quot;$&#123;item.eStatus&#125;==1&quot;&gt;</span><br><span class="line">                &lt;td class=&quot;td-status&quot;&gt;&lt;span class=&quot;label label-success radius&quot;&gt;正常&lt;/span&gt;&lt;/td&gt;</span><br><span class="line">            &lt;/th:block&gt;</span><br><span class="line">            &lt;th:block th:if=&quot;$&#123;item.eStatus&#125;==0&quot;&gt;</span><br><span class="line">                &lt;td class=&quot;td-status&quot;&gt;&lt;span class=&quot;label radius&quot;&gt;异常&lt;/span&gt;&lt;/td&gt;</span><br><span class="line">            &lt;/th:block&gt;</span><br><span class="line">            &lt;td class=&quot;td-manage&quot; th:switch=&quot;$&#123;item.eStatus&#125;&quot;&gt;</span><br><span class="line">                &lt;span th:case=&quot;1&quot;&gt;</span><br><span class="line">                    &lt;a style=&quot;text-decoration:none&quot; th:onClick=&quot;&apos;javascript:emp_stop(this,\&apos;&apos;+$&#123;item.empId&#125;+&apos;\&apos;)&apos;&quot; href=&quot;javascript:;&quot; title=&quot;异常&quot;&gt;&lt;i class=&quot;Hui-iconfont&quot;&gt;&amp;#xe631;&lt;/i&gt;&lt;/a&gt;</span><br><span class="line">                &lt;/span&gt;</span><br><span class="line">                &lt;span th:case=&quot;0&quot;&gt;</span><br><span class="line">&lt;a style=&quot;text-decoration:none&quot; th:onClick=&quot;&apos;javascript:emp_start(this,\&apos;&apos;+$&#123;item.empId&#125;+&apos;\&apos;)&apos;&quot; href=&quot;javascript:;&quot; title=&quot;正常&quot;&gt;&lt;i class=&quot;Hui-iconfont&quot;&gt;&amp;#xe615;&lt;/i&gt;&lt;/a&gt;</span><br><span class="line">                &lt;/span&gt;</span><br><span class="line">                &lt;a title=&quot;详情&quot; href=&quot;javascript:;&quot; th:onclick=&quot;&apos;javascript:emp_show(\&apos;&apos;+$&#123;item.empId&#125;+&apos;\&apos;)&apos;&quot; class=&quot;ml-5&quot; style=&quot;text-decoration:none&quot;&gt;&lt;i class=&quot;Hui-iconfont&quot;&gt;&amp;#xe665;&lt;/i&gt;&lt;/a&gt;</span><br><span class="line">                &lt;a title=&quot;编辑&quot; href=&quot;javascript:;&quot; th:onclick=&quot;&apos;javascript:layer_update(this,\&apos;&apos;+$&#123;item.empId&#125;+&apos;\&apos;)&apos;&quot; class=&quot;ml-5&quot; style=&quot;text-decoration:none&quot;&gt;&lt;i class=&quot;Hui-iconfont&quot;&gt;&amp;#xe6df;&lt;/i&gt; &lt;/a&gt;</span><br><span class="line">                &lt;a title=&quot;删除&quot; href=&quot;javascript:;&quot; th:onclick=&quot;&apos;javascript:emp_del(this, \&apos;&apos;+$&#123;item.empId&#125;+&apos;\&apos;)&apos;&quot; class=&quot;ml-5&quot; style=&quot;text-decoration:none&quot;&gt;&lt;i class=&quot;Hui-iconfont&quot;&gt;&amp;#xe6e2;&lt;/i&gt;&lt;/a&gt;</span><br><span class="line">            &lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">        &lt;/tbody&gt;</span><br><span class="line">    &lt;/table&gt;</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;数据表格的代码如上所示，勾选框采用的是input框，主要是用name=”subCheck”做标识。</p>
+<h5 id="2-判断是否选中了数据"><a href="#2-判断是否选中了数据" class="headerlink" title="2.判断是否选中了数据"></a>2.判断是否选中了数据</h5><p>&emsp;&emsp;当我们点击了批量删除按钮之后，首先应该判断是否选中的数据，选中了之后才能进行下一步操作，没有选中数据则不进行下一步操作，并给出相应操作的提示。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var checkNum=$(&quot;input[name=&apos;subCheck&apos;]:checked&quot;).length;</span><br><span class="line">    if (checkNum==0)&#123;</span><br><span class="line">        layerOpen(&quot;请至少选择一项&quot;);</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;在这里，layerOpen是我自己封装的一个方法。功能特别简单，主要就是一个弹窗，弹出自定义的输出内容。代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function layerOpen(msg) &#123;</span><br><span class="line">    var index = layer.open(&#123;</span><br><span class="line">        skin: &apos;layui-layer-molv&apos;, //样式类名</span><br><span class="line">        content: msg,</span><br><span class="line">        btn: [&apos;确定&apos;],</span><br><span class="line">        shade: 0.4,</span><br><span class="line">        shadeClose: true,</span><br><span class="line">        title: [&apos;错误信息&apos;, &apos;text-align:center; color: red&apos;],</span><br><span class="line">        yes: function () &#123;</span><br><span class="line">            layer.close(index);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="3-遍历所有的勾选框"><a href="#3-遍历所有的勾选框" class="headerlink" title="3.遍历所有的勾选框"></a>3.遍历所有的勾选框</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">//批量选择</span><br><span class="line">    layer.confirm(&apos;确定要删除吗？&apos;, function (index) &#123;</span><br><span class="line">        //获取所有选中的checked框</span><br><span class="line">        var option = $(&quot;:checked&quot;);</span><br><span class="line">        var checkedId = &quot;&quot;;</span><br><span class="line">        var flag=true;</span><br><span class="line">        //拼接除全选框外所有选中的id</span><br><span class="line">        for (var i=0, len = option.length; i &lt; len; i++)&#123;</span><br><span class="line">            if (flag)&#123;</span><br><span class="line">                if (option[i].id == &apos;subCheck&apos;)&#123;</span><br><span class="line">                    flag = true;</span><br><span class="line">                &#125;else &#123;</span><br><span class="line">                    flag = false;</span><br><span class="line">                    checkedId += option[i].value;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;else &#123;</span><br><span class="line">                checkedId += &quot;,&quot; +option[i].value</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;先弹出一个确认框，当点击确认时才进行下一步的操作，否则直接退出。遍历当前页面上的每一个勾选框，遇到第一个勾选框选中时，在checkedId中存放这个勾选框的value值，也就是数据的UUID值，刚好这个值就是我们后台需要的，然后将定义的标识符flag定为false。之后继续遍历，遇到第二个勾选框被勾选时，记录数据的UUID,同时加一个”,”进行分隔。</p>
+<h4 id="4-将选中的数据UUID通过ajax传到后台"><a href="#4-将选中的数据UUID通过ajax传到后台" class="headerlink" title="4.将选中的数据UUID通过ajax传到后台"></a>4.将选中的数据UUID通过ajax传到后台</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">            type: &quot;post&quot;,</span><br><span class="line">            url: &quot;/permission/user/batchDelete&quot;,</span><br><span class="line">            dataType: &quot;json&quot;,</span><br><span class="line">            data: &#123;&quot;checkedId&quot;:checkedId&#125;,</span><br><span class="line">            success: function (result) &#123;</span><br><span class="line">                if (result.code == 0)&#123;</span><br><span class="line">                    layer.msg(result.data, &#123;icon: 6, time: 2000&#125;, function () &#123;</span><br><span class="line">                        retrieve();</span><br><span class="line">                    &#125;)</span><br><span class="line">                &#125;else&#123;</span><br><span class="line">                    layer.msg(result.data, &#123;icon: 5,time: 2000&#125;);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            error: function (reslut) &#123;</span><br><span class="line">                layer.msg(reslut.data, &#123;icon: 5, time: 2000&#125;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="5-在后台对数据库数据进行操作"><a href="#5-在后台对数据库数据进行操作" class="headerlink" title="5.在后台对数据库数据进行操作"></a>5.在后台对数据库数据进行操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//批量删除员工信息</span><br><span class="line">@PostMapping(value = &quot;/batchDelete&quot;)</span><br><span class="line">public void batchDelete(String empId)&#123;</span><br><span class="line">    String[] empArrays=empId.split(&quot;,&quot;);</span><br><span class="line">    List&lt;String&gt; list=Arrays.asList(empArrays);</span><br><span class="line">    for (String id:list)&#123;</span><br><span class="line">        Staff staff=empService.getEmpByEmpId(id);</span><br><span class="line">        if (staff.isFlag())&#123;</span><br><span class="line">            ResponseUtils.writeErrorResponse(request,response,&quot;选中的员工包括管理员，无法删除&quot;);</span><br><span class="line">            throw new MyException(&quot;选中的员工信息包括管理员，无法删除&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    empService.batchDelete(list);</span><br><span class="line">    ResponseUtils.writeSuccessReponse(request,response,&quot;批量删除员工信息成功&quot;);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;因为后台传过来的是一个字符串，所以我们首先将字符串切割开来放到一个数组里面，最后将数组转化为list集合，直接传递给mybatis完成删除操作即可。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;delete id=&quot;batchDelete&quot; parameterType=&quot;java.util.List&quot;&gt;</span><br><span class="line">DELETE e.*, em.*, u.*, ur.*</span><br><span class="line">FROM t_emp e</span><br><span class="line">LEFT JOIN t_emp_param em</span><br><span class="line">ON e.EMP_ID=em.EMP_ID</span><br><span class="line">LEFT JOIN t_user u</span><br><span class="line">ON e.EMP_ID = u.USER_ID</span><br><span class="line">LEFT JOIN t_user_role ur</span><br><span class="line">ON u.USER_ID = ur.USER_ID</span><br><span class="line">WHERE e.EMP_ID IN</span><br><span class="line">&lt;foreach collection=&quot;list&quot; item=&quot;item&quot; open=&quot;(&quot; close=&quot;)&quot; separator=&quot;,&quot;&gt;</span><br><span class="line">  #&#123;item&#125;</span><br><span class="line">&lt;/foreach&gt;</span><br><span class="line">&lt;/delete&gt;</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;后台的操作比较简单，但是因为涉及到多张表关联，在这里我用到的是将多张表关联在一起然后匹配字段一起删除，比起级联删除，这样对资源池的消耗比较小。</p>
+<h4 id="6-对页面进行刷新，重新加载数据库中的数据"><a href="#6-对页面进行刷新，重新加载数据库中的数据" class="headerlink" title="6.对页面进行刷新，重新加载数据库中的数据"></a>6.对页面进行刷新，重新加载数据库中的数据</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * 刷新数据</span><br><span class="line"> */</span><br><span class="line">function reload() &#123;</span><br><span class="line">    var data=&#123;</span><br><span class="line">        pageNo: laypage_curr || 1,</span><br><span class="line">        pageSize: laypage_limit || 10</span><br><span class="line">    &#125;;</span><br><span class="line">    common.getData(&apos;post&apos;,&apos;/emp/retrieve&apos;,data,&apos;html&apos;,$(&quot;#page_data&quot;));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;以上操作即可实现数据的批量删除，操作比较简单，主要是为了记录下这个过程。</p>
 
       
     </div>
@@ -531,7 +503,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/工具/" rel="tag"><i class="fa fa-tag"></i> 工具</a>
+            <a href="/tags/前端/" rel="tag"><i class="fa fa-tag"></i> 前端</a>
           
         </div>
       
@@ -544,8 +516,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/30/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/03/28/spring boot配置热部署/" rel="next" title="spring boot 配置热部署">
+                <i class="fa fa-chevron-left"></i> spring boot 配置热部署
               </a>
             
           </div>
@@ -554,8 +526,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/02/多线程的几种实现方式/" rel="prev" title="多线程的几种实现方式">
-                多线程的几种实现方式 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/06/Jenkins集成Sonar进行持续审查/" rel="prev" title="Jenkins集成Sonar进行持续审查">
+                Jenkins集成Sonar进行持续审查 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -806,7 +778,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-简介"><span class="nav-number">1.</span> <span class="nav-text">git 简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-常用指令"><span class="nav-number">2.</span> <span class="nav-text">git 常用指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-pull"><span class="nav-number">2.1.</span> <span class="nav-text">git pull</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-add"><span class="nav-number">2.2.</span> <span class="nav-text">git add</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-rm"><span class="nav-number">2.3.</span> <span class="nav-text">git rm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-commit"><span class="nav-number">2.4.</span> <span class="nav-text">git commit</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-push"><span class="nav-number">2.5.</span> <span class="nav-text">git push</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-log"><span class="nav-number">2.6.</span> <span class="nav-text">git log</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-revert"><span class="nav-number">2.7.</span> <span class="nav-text">git revert</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-增加表格数据勾选框"><span class="nav-number">1.</span> <span class="nav-text">1.增加表格数据勾选框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-判断是否选中了数据"><span class="nav-number">2.</span> <span class="nav-text">2.判断是否选中了数据</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-遍历所有的勾选框"><span class="nav-number"></span> <span class="nav-text">3.遍历所有的勾选框</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-将选中的数据UUID通过ajax传到后台"><span class="nav-number"></span> <span class="nav-text">4.将选中的数据UUID通过ajax传到后台</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-在后台对数据库数据进行操作"><span class="nav-number"></span> <span class="nav-text">5.在后台对数据库数据进行操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-对页面进行刷新，重新加载数据库中的数据"><span class="nav-number"></span> <span class="nav-text">6.对页面进行刷新，重新加载数据库中的数据</span></a></div>
             
 
           </div>
