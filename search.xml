@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>%2F2018%2F06%2F19%2FJava%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%BF%E7%94%A8Sigar%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[Java项目中使用Sigar获取系统信息]]></title>
+    <url>%2F2018%2F06%2F12%2FJava%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%BF%E7%94%A8Sigar%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF%2F</url>
+    <content type="text"><![CDATA[&emsp;&emsp;最近在做一个个人项目时，想实现监控服务器性能信息等的需求，比如cpu、mem、disk等使用信息，于是各种google，找到了Sigar这个工具。]]></content>
+      <categories>
+        <category>项目</category>
+      </categories>
+      <tags>
+        <tag>web项目</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[springboot 整合quartz实现定时任务]]></title>
@@ -140,7 +146,7 @@
   <entry>
     <title><![CDATA[ArrryList和LinkedList的区别]]></title>
     <url>%2F2018%2F01%2F06%2FArrayList%E5%92%8CLinkedList%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
-    <content type="text"><![CDATA[相同点：ArrayList和LinkedList类都位于java.util包中，均为可收缩数组，即可以动态的改变数组的长度。]]></content>
+    <content type="text"><![CDATA[&emsp;&emsp;ArrayList和LinkedList都是List接口的实现类，在面试中经常被问到，所以写篇日志记录下。 所在位置&emsp;&emsp;先来看看ArrayList和linkedList在JDK中所在的位置&emsp;&emsp;从图中可以看出,ArrayList与LinkedList都是List接口的实现类,因此都实现了List的所有未实现的方法,只是实现的方式有所不同,(编程思想: 从中可以看出面向接口的好处, 对于不同的需求就有不同的实现!),而List接口继承了Collection接口,Collection接口又继承了Iterable接口,因此可以看出List同时拥有了Collection与Iterable接口的特性. 认识和理解ArrayList&emsp;&emsp;ArrayList实现了List接口,它是以数组的方式来实现的,数组的特性是可以使用索引的方式来快速定位对象的位置,因此对于快速的随机取得对象的需求,使用ArrayList实现执行效率上会比较好. 1234567891011121314151617public static void main(String[] args)&#123; List&lt;String&gt; list =new ArrayList&lt;&gt;(); list.add(&quot;张三&quot;); list.add(&quot;李四&quot;); list.add(&quot;王五&quot;); list.add(&quot;赵六&quot;); System.out.println(&quot;使用迭代器进行遍历&quot;); Iterator it=list.iterator(); while (it.hasNext())&#123; System.out.println(it.next()); &#125; System.out.println(&quot;使用增强for循环&quot;); for (String name: list)&#123; System.out.println(name); &#125; &#125; &emsp;&emsp;这里列举了两张遍历list集合的方法，迭代器和增强for循环 认识和理解linkedList&emsp;&emsp;LinkedList是采用链表的方式来实现List接口的,它本身有自己特定的方法，如: addFirst(),addLast(),getFirst(),removeFirst()等. 由于是采用链表实现的,因此在进行insert和remove动作时在效率上要比ArrayList要好得多!适合用来实现Stack(堆栈)与Queue(队列),前者先进后出，后者是先进先出. 1.堆栈1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253public class StringStack &#123; private LinkedList&lt;String&gt; linkedList=new LinkedList&lt;&gt;(); /** * 将元素插入到linkedList的第一个元素 * @param name */ public void push(String name)&#123; linkedList.addFirst(name); &#125; /** * 获取linkedList的第一个元素 * @return */ public String getTop()&#123; return linkedList.getFirst(); &#125; /** * 删除linkedList的第一个元素 */ public String removeTop()&#123; return linkedList.removeFirst(); &#125; public int size()&#123; return linkedList.size(); &#125; public boolean isEmpty()&#123; return linkedList.isEmpty(); &#125; public static void main(String[] args)&#123; StringStack stack=new StringStack(); stack.push(&quot;张三&quot;); stack.push(&quot;李四&quot;); stack.push(&quot;王五&quot;); stack.push(&quot;赵六&quot;); stack.push(&quot;薛七&quot;); stack.push(&quot;钱八&quot;); stack.push(&quot;孙九&quot;); stack.push(&quot;周十&quot;); System.out.println(&quot;第一个元素是&quot;+stack.getTop()); System.out.println(&quot;链表的长度：&quot;+stack.size()); System.out.println(&quot;全部元素:\t&quot;); while (!stack.isEmpty())&#123; System.out.println(stack.removeTop()); &#125; &#125;&#125; 2.实现队列类似 ArrayList和LinkedList相同点：1.ArrayList和LinkedList类都位于java.util包中，均为可收缩数组，即可以动态的改变数组的长度。2.ArrayList和LinkedList都是不同步的。3.都位于java.util包中。4.都是List接口的实现类，List中的元素都是有序、不可重复的。 ArrayList和LinkedList不同点：1.ArrayList是由Array所支持的基于一个索引的数据结构，所以它提供对元素的随机访问， 复杂度为O(1)，但LinkedList存储一系列的节点数据，每个节点都与前一个和下一个节点相连接。 所以，尽管有使用索引获取元素的方法，内部实现是从起始点开始遍历，遍历到索引的节点然后返回元素， 时间复杂度为O(n)，比ArrayList要慢。2.ArrayList和Vector底层是使用数组实现的；LinkedList底层使用双向循环链表数据结构实现；3.相比较于ArrayList,LinkedList对于添加、删除一个元素会更快，因为在链表中插入元素时，不会涉及到更改数组的长度，或者更新索引。4.linkedList比ArrayList消耗更多的内存，因为每个节点还存储着其前后节点的引用。 ArrayList和vector的区别1.Vector是线程安全的，因为Vector基本上所有方法都加了排它锁(synchronized),而ArrayList是线程不安全的。2.因为线程安全就必须设计到效率，所以ArrayList效率高于Vector.3.自增长：ArrayList如果发现容量不足时，会自动进行容量扩容，新的大小为：1int newCapacity = (oldCapacity * 3)/2 + 1; 也就是原有容量的1.5倍+1。然后通过底层的复制方法将原有数据复制过来Vector则是原始容量的2倍进行扩容。]]></content>
       <categories>
         <category>Java</category>
       </categories>
